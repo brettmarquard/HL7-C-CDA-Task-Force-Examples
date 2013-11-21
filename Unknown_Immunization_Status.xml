@@ -15,6 +15,7 @@
                 <!-- ** Immunization medication information ** -->
                 <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
                 <manufacturedMaterial>
+                    <!-- Needed to use nullFlavor of OTH since templates requires CVX  in code element-->
                     <code nullFlavor="OTH">
                         <translation code="71181003" displayName="vaccine"
                             codeSystem="2.16.840.1.113883.6.96"
