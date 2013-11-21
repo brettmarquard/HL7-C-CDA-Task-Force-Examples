@@ -1,4 +1,3 @@
-<entry>
     <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="false" nullFlavor="NI">
         <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
         <!--  ****   Immunization activity template    **** -->
@@ -7,7 +6,7 @@
         <text>
             <reference value="#immun1"/>
         </text>
-        <statusCode nullFlavor="NI"/>
+        <statusCode nullFlavor="completed"/>
         <effectiveTime value="199911"/>
         <!-- Date which you do not know whether or not patient received a vaccination -->
         <consumable>
@@ -24,4 +23,4 @@
             </manufacturedProduct>
         </consumable>
     </substanceAdministration>
-</entry>
+
