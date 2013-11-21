@@ -17,6 +17,8 @@
                 <manufacturedMaterial>
                     <!-- Needed to use nullFlavor of OTH since templates requires CVX in code element-->
                     <code nullFlavor="OTH">
+                        <!-- Optional original text -->
+                        <originalText>Vaccination</originalText>
                         <translation code="71181003" displayName="vaccine"
                             codeSystem="2.16.840.1.113883.6.96"
                             codeSystemName="SNOMED CT"/>
