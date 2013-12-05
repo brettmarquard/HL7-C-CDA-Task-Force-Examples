@@ -7,6 +7,7 @@
         <text>
             <reference value="#immun1"/>
         </text>
+         <!-- Link to narrative stating no information on whether the patient received a vaccination -->
         <statusCode nullFlavor="completed"/>
         <effectiveTime value="199911"/>
         <!-- Date which you do not know whether or not patient received a vaccination -->
