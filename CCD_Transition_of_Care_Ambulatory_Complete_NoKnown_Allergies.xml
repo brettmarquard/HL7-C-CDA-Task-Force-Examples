@@ -426,10 +426,8 @@
     <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
         <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
-        <!-- Review use of 48765-2 with SDWG, consider consistency with problem concern act -->
-        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"
-            codeSystemName="LOINC"
-            displayName="Allergies, adverse reactions, alerts"/>
+        <!-- SDWG supports 48765-2 or CONC in teh code element -->
+        <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
         <statusCode code="active"/> <!--currently tracked concerns are active concerns-->
         <effectiveTime>
             <low value="20091201"/> <!--show time when the concern first began being tracked-->
