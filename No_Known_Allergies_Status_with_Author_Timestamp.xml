@@ -11,6 +11,8 @@
         </effectiveTime>
         <entryRelationship typeCode="SUBJ">
             <!-- No Known Allergies -->
+            <!-- The negationInd = true negates the observation/value -->
+            <!-- The use of negationInd corresponds with the newer Observation.valueNegationInd -->
             <observation classCode="OBS" moodCode="EVN" negationInd="true">
                 <!-- allergy - intolerance observation template -->
                 <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
