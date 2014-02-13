@@ -1,0 +1,56 @@
+<section>
+    <!-- Add .2 for C-CDAR2 example -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnositc tests and/or laboratory data"/>
+    <title>Results</title>
+    <text>
+        
+        <list>
+            <item>
+                <caption>Results of foreign body removal procedure</caption>
+                <content id="component1">Foreign bodies found</content>: 3 <content id="unit1">unidentified objects</content>
+            </item>
+        </list>
+    </text>
+    <entry>
+        <organizer classCode="BATTERY" moodCode="EVN">
+            <!-- Add .2 for C-CDAR2 example -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+            <id root="1.2.3.4" extension="abcd" />
+            <code code="10120" codeSystem="2.16.840.1.113883.6.12"
+                codeSystemName="CPT-4" displayName="Removal of foreign body"/>
+            <statusCode code="completed" />
+            <!-- Component for 'Foreign body' observation and value -->
+            <component>
+                <observation classCode="OBS" moodCode="EVN">
+                    <!-- add .2 for C-CDAR2 example -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                    <id root="1.2.3.4.5" extension="efgh" />
+                    <code code="19227008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="foreign body">
+                        <!-- Representation of this observation name in the narrative -->
+                        <originalText>
+                            <reference value="#component1" />
+                        </originalText>
+                    </code>
+                    <statusCode code="completed" />
+                    <effectiveTime value="20140213103700-0600" />
+                    <!-- 3 widgets is a physical quantity with no applicable case-sensitive UCUM -->
+                    <value xsi:type="PQ" nullFlavor="OTH">
+                        <!-- translation on PQ is of type PQR which contains a numeric value, and an
+                             optional coded unit system represented in code and codeSystem attributes.
+                             If the only information about a unit is a string, then it should be 
+                             represented in the originalText element of the translation. 
+                             Note that 'PQ' does not contain originalText, so you cannot reference
+                             the entire string "3 widgets"-->
+                        <translation value="3">
+                            <!-- The original text represents only the coded portion of the translation. -->
+                            <originalText>unidentified objects
+                                <reference value="#unit1"/>
+                            </originalText>
+                        </translation>
+                    </value>
+                </observation>
+            </component>
+        </organizer>
+    </entry>
+</section>
