@@ -26,6 +26,7 @@
                     <low value="20130607160506"/> <!-- Time at which THIS “concern” began being tracked.-->
                     <high/>
                 </effectiveTime>
+                <!-- Optional Author Element-->
                 <author>
                     <time value="20130607160506"/>
                     <assignedAuthor>
@@ -75,6 +76,7 @@
                             codeSystemName="SNOMED CT">
                             <originalText><reference value="#problemType1"></reference></originalText>
                         </value>
+                        <!-- Optional Author Element-->
                         <author>
                             <time value="20130607160506"/>
                             <assignedAuthor>
