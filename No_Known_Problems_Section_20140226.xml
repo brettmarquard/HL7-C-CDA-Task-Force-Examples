@@ -5,13 +5,12 @@
         <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/> <!-- Problem Section with Coded Entries Required -->
         <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
         <title>PROBLEMS</title>
-        <text>
-            <content ID="Concern_1">Problem Concern:
-                Concern Tracker Start Date: 06/07/2013 16:05:06
-                Concern Tracker End Date: 
-                Concern Status: Active
-                <content ID="problems1">No known <content ID="problemType1">problems.</content></content>
-            </content>
+        <text ID="Concern_1">
+            Problem Concern:<br/>
+            Concern Tracker Start Date: 06/07/2013 16:05:06<br/>
+            Concern Tracker End Date: <br/>
+            Concern Status: Active<br/>
+            <content ID="problems1">No known <content ID="problemType1">problems.</content></content>
         </text>
         <entry typeCode="DRIV">
             <!-- Problem Concern Act -->	
