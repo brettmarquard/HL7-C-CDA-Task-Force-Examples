@@ -4,7 +4,6 @@
     <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnositc tests and/or laboratory data"/>
     <title>Results</title>
     <text>
-        
         <list>
             <item>
                 <caption>Results of foreign body removal procedure</caption>
@@ -35,6 +34,8 @@
                     <statusCode code="completed" />
                     <effectiveTime value="20140213103700-0600" />
                     <!-- 3 widgets is a physical quantity with no applicable case-sensitive UCUM -->
+                    <!-- {unidentified objects} is not recommended. Even though it is, in the strictest sense, valid UCUM, -->
+                    <!-- it is not interoperable as a generally-recognized UCUM value, such as {puffs} or {tbl} -->
                     <value xsi:type="PQ" nullFlavor="OTH">
                         <!-- translation on PQ is of type PQR which contains a numeric value, and an
                              optional coded unit system represented in code and codeSystem attributes.
