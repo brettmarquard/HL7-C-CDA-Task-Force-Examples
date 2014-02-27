@@ -24,8 +24,7 @@
                 <statusCode code="active"/> <!-- The concern is not active, in terms of there being an active condition to be managed.-->
                 <effectiveTime>
                     <low value="20130607160506"/> <!-- Time at which THIS “concern” began being tracked.-->
-                    <high/>
-                </effectiveTime>
+                </effectiveTime> <!-- status is active so high is not applicable. If high is present it should have nullFlavor of NA-->
                 <!-- Optional Author Element-->
                 <author>
                     <time value="20130607160506"/>
