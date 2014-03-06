@@ -1155,19 +1155,18 @@
 					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
 						displayName="HISTORY OF MEDICATION USE"/>
 					<title>MEDICATIONS</title>
-					<text >No Known Medications</text>
+					<text>No Medications</text>
 					<entry>
 						<!-- Act.actionNegationInd -->
 						<substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="true">
 							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
 							<!-- ** MEDICATION ACTIVITY -->
 							<id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
-							<statusCode code="completed"/>
+							<statusCode code="active"/>
 							<effectiveTime xsi:type="IVL_TS">
-								<!-- Date and time of substanceAdministration - in this case when recorded -->
-								<low value="20140227000000"/>
-								<high value="20140227000000"/>
-							</effectiveTime>							
+								<low nullFlavor="NA"/>
+								<high nullFlavor="NA"/>
+							</effectiveTime>
 							<consumable>
 								<manufacturedProduct classCode="MANU">
 									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
