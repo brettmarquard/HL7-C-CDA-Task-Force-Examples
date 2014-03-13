@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
 <!-- Title: US_Realm_Header_Template -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+ xsi:schemaLocation="urn:hl7-org:v3 ../../../../../Mdocuments/HL7/Standards%20Documentation/cda_r2_normativewebedition/CDA_R2_NormativeWebEdition2005/infrastructure/cda/CDA.xsd"
+ xmlns="urn:hl7-org:v3"
+ xmlns:cda="urn:hl7-org:v3"
+ xmlns:sdtc="urn:hl7-org:sdtc">
 	<!-- ******************************************************** CDA Header 
 		******************************************************** -->
 	<realmCode code="US"/>
@@ -116,7 +119,7 @@
 	<author>
 		<time value="20050329224411+0500"/>
 		<assignedAuthor>
-			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+			<id root="2.16.840.1.113883.4.6" nullFlavor="UNK"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
 				displayName="Allopathic &amp; Osteopathic Physicians"/>
 			<addr>
@@ -1163,10 +1166,8 @@
 							<!-- ** MEDICATION ACTIVITY -->
 							<id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
 							<statusCode code="active"/>
-							<effectiveTime xsi:type="IVL_TS">
-								<low nullFlavor="NA"/>
-								<high nullFlavor="NA"/>
-							</effectiveTime>
+							<!-- Note: An error will be logged on the use of effectiveTime with nullFlavor until validator is updated for C-CDA DSTU Comment 423 -->
+							<effectiveTime nullFlavor="NA"/>
 							<consumable>
 								<manufacturedProduct classCode="MANU">
 									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1179,6 +1180,28 @@
 									</manufacturedMaterial>
 								</manufacturedProduct>
 							</consumable>
+							<author>
+								<!-- Time the author noted that patient is on no medications -->
+								<time value="20130607160506"/>
+								<assignedAuthor>
+									<id extension="66666" root="2.16.840.1.113883.4.6"/>
+									<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
+										displayName="Cardiovascular Disease"/>
+									<addr>
+										<streetAddressLine>6666 StreetName St.</streetAddressLine>
+										<city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+										<country>US</country>
+									</addr>
+									<telecom value="tel:+1(301)666-6666" use="WP"/>
+									<assignedPerson>
+										<name>
+											<given>Heartly</given>
+											<family>Sixer</family>
+											<suffix>MD</suffix>
+										</name>
+									</assignedPerson>
+								</assignedAuthor>
+							</author>
 						</substanceAdministration>
 					</entry>
 				</section>
