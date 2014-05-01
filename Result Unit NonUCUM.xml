@@ -4,54 +4,91 @@
     <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnositc tests and/or laboratory data"/>
     <title>Results</title>
     <text>
-        <list>
-            <item>
-                <caption>Results of foreign body removal procedure</caption>
-                <content id="component1">Foreign bodies found</content>: 3 <content id="unit1">unidentified objects</content>
-            </item>
-        </list>
+        <table>
+        <thead>
+            <tr>
+             <th>Description</th>
+             <th>Value / Unit</th>
+             <th>Interpretation</th>
+             <th>Reference Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+             <th colspan="4"><content ID="test1">CBC</content> at 02-13-2014 10:37a </th>
+            </tr>
+            <tr>
+             <td ID="component1">Platelet count</td>
+             <td >152 THOUS/MCL</td>
+             <td>Normal</td>
+             <td>150-400</td>
+            </tr>
+        </tbody>
+        </table>
     </text>
     <entry>
         <organizer classCode="BATTERY" moodCode="EVN">
             <!-- Add .2 for C-CDAR2 example -->
             <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
             <id root="1.2.3.4" extension="abcd" />
-            <code code="10120" codeSystem="2.16.840.1.113883.6.12"
-                codeSystemName="CPT-4" displayName="Removal of foreign body"/>
+            <code code="57021-8" displayName="CBC W Auto Differential panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <!-- Name of test as recorded in the narrative -->
+                <originalText>
+                    <reference value="#test1"/>
+                </originalText>
+            </code>
             <statusCode code="completed" />
-            <!-- Component for 'Foreign body' observation and value -->
+            <effectiveTime value="201310200908+0500"/>
+            <!-- Component for 'Platelets' observation and value -->
             <component>
                 <observation classCode="OBS" moodCode="EVN">
                     <!-- add .2 for C-CDAR2 example -->
                     <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
                     <id root="1.2.3.4.5" extension="efgh" />
-                    <code code="19227008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="foreign body">
+                    <code code="26515-7" displayName="Platelets [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                         <!-- Representation of this observation name in the narrative -->
                         <originalText>
-                            <reference value="#component1" />
+                            <reference value="#component1"/>
                         </originalText>
                     </code>
                     <statusCode code="completed" />
                     <effectiveTime value="20140213103700-0600" />
-                    <!-- 3 widgets is a physical quantity with no applicable case-sensitive UCUM -->
-                    <!-- {unidentified objects} is not recommended. Even though it is, in the strictest sense, valid UCUM, -->
-                    <!-- it is not interoperable as a generally-recognized UCUM value, such as {puffs} or {tbl} -->
+                    <!-- Lab sends a result to an EHR or another system with discrete units 
+                          that have not been translated to UCUM -->
+                    <!-- value/@nullFlavor must be used since the unit is not specified in UCUM-->
                     <value xsi:type="PQ" nullFlavor="OTH">
-                        <!-- translation on PQ is of type PQR which contains a numeric value, and an
-                             optional coded unit system represented in code and codeSystem attributes.
-                             If the only information about a unit is a string, then it should be 
-                             represented in the originalText element of the translation. 
-                             Note that 'PQ' does not contain originalText, so you cannot reference
-                             the entire string "3 widgets"-->
-                        <translation value="3">
-                            <!-- The original text represents only the coded portion of the translation. -->
-                            <originalText>unidentified objects
-                                <reference value="#unit1"/>
-                            </originalText>
+                        <!-- The units for this lab result require translation to be conformant to UCUM.-->
+                        <!-- translation/@nullFlavor must be used since the unit is not specified in any coding system-->
+                        <!-- This doesn't mean the value is null, but that the code/codeSystem is unknown -->
+                        <translation value="152" nullFlavor="OTH">
+                            <!-- originalText representing the units received from the lab.-->
+                            <!-- It does NOT include the value-->
+                            <originalText>THOUS/MCL</originalText>
                         </translation>
                     </value>
+                    <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    <referenceRange>
+                        <observationRange>
+                          <!-- Reference ranges must follow the same method as value if UCUM is unknown-->
+                          <value xsi:type="IVL_PQ">
+                            <low nullFlavor="OTH">
+                                <translation value="150" nullFlavor="OTH">
+                                    <originalText>THOUS/MCL</originalText>
+                                </translation>
+                            </low>
+                            <high nullFlavor="OTH">
+                                <translation value="400" nullFlavor="OTH">
+                                    <originalText>THOUS/MCL</originalText>
+                                </translation>
+                            </high>
+                          </value>
+                          <!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                        </observationRange>
+                    </referenceRange>   
                 </observation>
             </component>
         </organizer>
     </entry>
 </section>
+
