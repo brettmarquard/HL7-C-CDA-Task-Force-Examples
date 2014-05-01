@@ -15,7 +15,7 @@
         </thead>
         <tbody>
             <tr>
-             <th colspan="4"><content ID="test1">CBC</content> at 02-13-2014 10:37a </th>
+             <th colspan="4"><content ID="test1">CBC</content>at 02-13-2014 10:37a </th>
             </tr>
             <tr>
              <td ID="component1">Platelet count</td>
@@ -38,13 +38,13 @@
                 </originalText>
             </code>
             <statusCode code="completed" />
-            <effectiveTime value="201310200908+0500"/>
+               <effectiveTime value="20140213103700-0600"/>
             <!-- Component for 'Platelets' observation and value -->
             <component>
                 <observation classCode="OBS" moodCode="EVN">
                     <!-- add .2 for C-CDAR2 example -->
                     <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-                    <id root="1.2.3.4.5" extension="efgh" />
+                    <id root="1.2.3.4.5" extension="efgh"/>
                     <code code="26515-7" displayName="Platelets [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                         <!-- Representation of this observation name in the narrative -->
                         <originalText>
@@ -67,6 +67,7 @@
                         </translation>
                     </value>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    <!-- Optional reference range - in this case no UCUM available -->
                     <referenceRange>
                         <observationRange>
                           <!-- Reference ranges must follow the same method as value if UCUM is unknown-->
