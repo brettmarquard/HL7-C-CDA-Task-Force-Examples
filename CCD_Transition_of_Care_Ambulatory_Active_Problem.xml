@@ -2337,7 +2337,7 @@
 							</thead>
 							<tbody>
 								<tr ID="Problem1">
-									<td ID="ProblemDescription1">Community Acquired Pneumonia</td>
+									<td>Community Acquired Pneumonia</td>
 									<td>
 										<content>Onset: March 2 2014</content>
 									</td>
