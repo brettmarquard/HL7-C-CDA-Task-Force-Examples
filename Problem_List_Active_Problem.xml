@@ -15,7 +15,7 @@
                 <tr ID="Problem1">
                     <td>Community Acquired Pneumonia</td>
                     <td>
-                        <content>Onset: March 2 2014</content>
+                        <content>Onset: February 27 2014</content>
                     </td>
                     <td>Active</td>
                 </tr>
@@ -31,7 +31,7 @@
             <!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
             <statusCode code="active" />
             <effectiveTime>
-                <!-- This represents the time that the clinician began tracking the concern. This may frequently be an EHR timestamp-->
+                <!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
                 <low value="20140302124536+0500" />
             </effectiveTime>
             <entryRelationship typeCode="SUBJ">
