@@ -1,7 +1,6 @@
 <!-- ************************* PROBLEM LIST ****************************** -->
 <component>
     <!-- nullFlavor of NI indicates No Information.-->
-    <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
     <section nullFlavor="NI">
         <!-- conforms to Problems section with entries optional -->
         <templateId root="2.16.840.1.113883.10.20.22.2.5.2"/>
