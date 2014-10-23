@@ -54,15 +54,10 @@
                                 <!-- Generic reference to Medication -->
                                 <code code="410942007" displayName="drug or medication"
                                     codeSystem="2.16.840.1.113883.6.96"            
-                                    codeSystemName="SNOMED CT">
-                                    <originalText>
-                                        <reference value="#allergy3allergen"/>
-                                    </originalText>
-                                </code>
+                                    codeSystemName="SNOMED CT"/>                                       
                             </playingEntity>
                         </participantRole>
-                    </participant>
-                    
+                    </participant>                    
                 </observation>
             </entryRelationship>
         </act>
