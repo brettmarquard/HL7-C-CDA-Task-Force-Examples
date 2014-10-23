@@ -4,7 +4,7 @@
     <!-- Allergies (entries required) section template -->
     <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
     <title>Allergies, Adverse Reactions and Alerts</title>
-    <text>No Known Drug Allergies </text>
+    <text>No Known Drug Allergies</text>
     <entry typeCode="DRIV">
         <!-- Allergy Concern Act -->
         <act classCode="ACT" moodCode="EVN">
@@ -15,11 +15,11 @@
             <statusCode code="active"/>
             <!--currently tracked concerns are active concerns-->
             <effectiveTime>
-                <low value="20091201"/>
+                <low value="20140104123506+0500"/>
                 <!--show time when the concern first began being tracked-->
             </effectiveTime>
             <entryRelationship typeCode="SUBJ">
-                <!-- No Known Allergies -->
+                <!-- No Known Drug Allergies -->
                 <!-- The negationInd = true negates the observation/value -->
                 <!-- The use of negationInd corresponds with the newer Observation.valueNegationInd -->
                 <observation classCode="OBS" moodCode="EVN" negationInd="true">
@@ -34,7 +34,7 @@
                         displayName="Drug allergy (disorder)"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     <author>
-                        <time value="20100103"/>
+                        <time value="20140104123506+0500"/>
                         <assignedAuthor>
                             <id extension="99999999" root="2.16.840.1.113883.4.6"/>
                             <code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
@@ -47,7 +47,8 @@
                                 </name>
                             </assignedPerson>
                         </assignedAuthor>
-                    </author>               
+                    </author>     
+                    <!-- In C-CDA R2 the participant is required. The SNOMED code ="410942007" displayName="drug or medication" could be used in the participant-->
                 </observation>
             </entryRelationship>
         </act>
