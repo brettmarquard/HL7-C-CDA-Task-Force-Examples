@@ -15,7 +15,7 @@
             <statusCode code="active"/>
             <!--currently tracked concerns are active concerns-->
             <effectiveTime>
-                <low value="20140104123506+0500"/>
+                <low value="20140104"/>
                 <!--show time when the concern first began being tracked-->
             </effectiveTime>
             <entryRelationship typeCode="SUBJ">
