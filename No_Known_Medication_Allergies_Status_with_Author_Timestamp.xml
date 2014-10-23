@@ -52,6 +52,7 @@
                         <participantRole classCode="MANU">
                             <playingEntity classCode="MMAT">
                                 <!-- Generic reference to Medication -->
+                                <!-- SNOMED is allowed in the code per C-CDA R1.1 DSTU comment 381 -->
                                 <code code="410942007" displayName="drug or medication"
                                     codeSystem="2.16.840.1.113883.6.96"            
                                     codeSystemName="SNOMED CT"/>                                       
