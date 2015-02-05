@@ -4,9 +4,39 @@
 	<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" displayName="Family History"/>
 	<title>Family History</title>
 	<text>
-		<paragraph><content ID="FH1rel">Dad</content> died of a <content ID="FH1prob1">stroke</content>, 
-			<content ID="FH1prob1age">age 72</content>, January 2003. He also had <content ID="FH1prob2">high blood pressure</content>.</paragraph>
-		<paragraph><content ID="FH2rel">Mom</content> is living with <content ID="FH2prob">no known problems</content></paragraph>
+		<!-- Narrative may be structured in any manner, but clear references between the narrative and discrete entries are encouraged -->
+		<table>
+			<thead>
+				<tr>
+					<th>Family Member</th>
+					<th>Relation</th>
+					<th>Problem</th>
+					<th>Age of Onset</th>
+					<th>Comments</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">Lucas Valieri</td>
+					<td ID="FH1rel" rowspan="2">Dad</td>
+					<td ID="FH1prob1">Stroke</td>
+					<td ID="FH1prob1age">72</td>
+					<td ID="FH1prob1comment">Cause of death, January 2003</td>
+				</tr>
+				<tr>
+					<td ID="FH1prob2">High Blood Pressure</td>
+					<td/>
+					<td/>
+				</tr>
+				<tr>
+					<td>Mia Jones</td>
+					<td ID="FH2rel">Mom</td>
+					<td ID="FH2prob">No known problems</td>
+					<td/>
+					<td/>
+				</tr>
+			</tbody>
+		</table>
 	</text>
 	<!-- Father died of a stroke -->
 	<entry>
@@ -77,6 +107,9 @@
 						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.22.4.47"/>
 							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+							<text>
+								<reference value="#FH1prob1comment"/>
+							</text>
 							<statusCode code="completed"/>
 							<value xsi:type="CD" code="419099009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Dead"/>
 						</observation>
