@@ -13,6 +13,7 @@
             <thead>
                 <tr>
                     <th>Vaccine</th>
+                    <th>Lot Number</th>
                     <th>Date</th>
                     <th>Status</th>
                 </tr>
@@ -20,6 +21,7 @@
             <tbody>
                 <tr ID="immun1">
                     <td>Influenza Virus Vaccine</td>
+                    <td>1</td>
                     <td>8/15/2010</td>
                     <td>Completed</td>
                 </tr>
@@ -42,17 +44,16 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
                     <manufacturedMaterial>
                         <code code="88" codeSystem="2.16.840.1.113883.12.292"
-                            displayName="Influenza virus vaccine" codeSystemName="CVX">
-                            <translation code="141" displayName="Influenza, seasonal, injectable"
-                                codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
-                        </code>
-                        <lotNumberText>1</lotNumberText>
+                            displayName="Influenza virus vaccine" codeSystemName="CVX"/>                                           
+                        <!-- Optional Lot Number<lotNumberText>1</lotNumberText>-->
                     </manufacturedMaterial>
+                  <!-- Optional manufacturerOrganization
                     <manufacturerOrganization>
                         <name>Health LS - Immuno Inc.</name>
-                    </manufacturerOrganization>
-                </manufacturedProduct>
+                    </manufacturerOrganization>-->
+                </manufacturedProduct>  
             </consumable>
+            <!-- Optional Performer 
             <performer>
                 <assignedEntity>
                     <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
@@ -77,7 +78,7 @@
                         <addr nullFlavor="UNK"/>
                     </representedOrganization>
                 </assignedEntity>
-            </performer>
+            </performer> -->
         </substanceAdministration>
     </entry>
 </section>
