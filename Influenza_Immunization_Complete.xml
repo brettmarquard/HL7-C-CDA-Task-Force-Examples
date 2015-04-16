@@ -36,6 +36,7 @@
             <text>
                 <reference value="#immun1"/>
             </text>
+            <!-- Indicates the status of the substanceAdministartion -->
             <statusCode code="completed"/>
             <effectiveTime value="20100815"/>
             <consumable>
@@ -45,7 +46,7 @@
                     <manufacturedMaterial>
                         <code code="88" codeSystem="2.16.840.1.113883.12.292"
                             displayName="Influenza virus vaccine" codeSystemName="CVX"/>                                           
-                        <!-- Optional Lot Number<lotNumberText>1</lotNumberText>-->
+                        <lotNumberText>1</lotNumberText>
                     </manufacturedMaterial>
                   <!-- Optional manufacturerOrganization
                     <manufacturerOrganization>
