@@ -15,15 +15,17 @@
                         <th>Units</th>
                         <th>Range</th>
                         <th>Date</th>
+                        <th>Interpretation</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ID="ResultComp1">
                         <td ID="ResultComp1Name">CO2</td>
                         <td>27</td>
-                        <td>mmol/uL</td>
-                        <td>23-29</td>
+                        <td>mmol/L</td>
+                        <td>23-29 mmol/L</td>
                         <td>8/15/2012</td>
+                        <td>Normal</td>
                     </tr>
                 </tbody>
             </table>
@@ -32,9 +34,11 @@
             <organizer classCode="BATTERY" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
                 <id root="8DFF4B72-E8FE-11E4-B48A-460231621F93"/>
+                <!-- This code specifies panel type - single result so just used result code-->
                 <code code="2028-9" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC" displayName="Carbon dioxide"/>
                 <statusCode code="completed"/>
+                <!-- Typically more than one component would be present - only one present in test data -->
                 <component>
                     <observation classCode="OBS" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
@@ -49,16 +53,17 @@
                             <reference value="#ResultComp1"/>
                         </text>
                         <statusCode code="completed"/>
-                        <effectiveTime value="20120815"/>
+                        <!-- Time is not present in lab result although very uncommon - added time-->
+                        <effectiveTime value="201208151005-0800"/>
                         <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                            xsi:type="PQ" unit="mmol/uL" value="27"/>
+                        xsi:type="PQ" unit="mmol/L" value="27"/>
                         <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                         <referenceRange>
                             <observationRange>
-                                <text>23-29 mmol/uL</text>
+                                <text>23-29 mmol/L</text>
                                 <value xsi:type="IVL_PQ">
-                                    <low value="23" unit="mmol/uL" />
-                                    <high value="29" unit="mmol/uL" />
+                                    <low value="23" unit="mmol/L" />
+                                    <high value="29" unit="mmol/L" />
                                 </value>
                                 <!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
                                 <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
