@@ -60,6 +60,9 @@
                         <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                         <referenceRange>
                             <observationRange>
+                                <!--Alternatively a text/reference@value similar to the one in Observation/text could be used
+                                    The Example Task Force kept text here due to it being a subclass and its prevelance
+                                    in active US implementation-->
                                 <text>23-29 mmol/L</text>
                                 <value xsi:type="IVL_PQ">
                                     <low value="23" unit="mmol/L" />
