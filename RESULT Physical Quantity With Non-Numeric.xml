@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+    <!-- Results Section with Coded Entries Required-->
+    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Relevant diagnostic tests and/or laboratory data"/>
+    <title>Results</title>
+    <text>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Value</th>
+                    <th>Unit</th>
+                    <th>Interpretation</th>
+                    <th>Reference Range</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="4">Lipid Panel, 10/20/2013 9:08 am</th>
+                </tr>
+                <tr>
+                    <td ID="result1">Triglycerides</td>
+                    <td>450</td>
+                    <td>mg/dL</td>
+                    <td>Abnormal</td>
+                    <td>&lt;150 mg/dL</td>
+                </tr>
+                <tr>
+                    <td ID="result2">LDL, Calculated</td>
+                    <!-- Example value filed from HL7 interface, paired with a real unit -->
+                    <td>Unable to calculate</td>
+                    <td>mg/dL</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry>
+        <organizer classCode="BATTERY" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+            <id root="f16043d8-8d93-41a1-9682-a6cc7215572c"/>
+            <code code="24331-1" displayName="Lipid Panel"
+                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <statusCode code="completed"/>
+            <effectiveTime value="201310200908+0500"/>
+            <!-- This component just here to show a typical PQ result, as well as the basis for an atypical LDL result -->
+            <component>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                    <id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+                    <code code="3043-7" displayName="Triglycerides" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text>
+                        <reference value="#result1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="201310200908+0500"/>
+                    <value xsi:type="PQ" value="450" unit="mg/dL" />
+                    <!-- optional interpretationCode/referenceRange snipped for brevity -->
+                </observation>
+            </component>
+            <component>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                    <id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+                    <code code="13457-7" displayName="Cholesterol in LDL by calculation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text>
+                        <reference value="#result2"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="201310200908+0500"/>
+                    <!-- This is not allowed, since value must be of XML type=real (decimal or double) 
+                         Neither is PQR allowed, because the value element in that node is STILL type=real
+                    <value xsi:type="PQ" value="Unable to calculate" unit="mg/dL" /> -->
+                    
+                    <!-- Typical way, but you lose the distinction between value and unit -->
+                    <value xsi:type="ST">Unable to calculate mg/dL</value>
+                    
+                    <!-- Option: use two value elements -->
+                    <value xsi:type="ST">Unable to calculate</value>
+                    <value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
+                    
+                    <!-- Option: SC data type (character string with code) 
+                         Code is probably supposed to be the same as the string -->
+                    <value xsi:type="SC" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM">Unable to calculate</value>
+                    
+                    <!-- Option: Structured sub-components -->
+                    <!-- The following pair of entryRelationships could be used in conjunction with the combined ST value type,
+                         so receviers unaware of this structure would still receive a value. 
+                         Understand SNOMED in code element is not ideal. Is there a LOINC code for "quantity" ?  -->
+                    <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="246205007" displayName="quantity" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value xsi:type="ST">Unable to calculate</value>
+                        </observation>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="246514001" displayName="units" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value xsi:type="ST">mg/dL</value>
+                        </observation>
+                    </entryRelationship>
+                    <!-- Alternate representation of units as act instead of observation, because UCUM is a coding system -->
+                    <entryRelationship>
+                        <act classCode="ACT" moodCode="EVN">
+                            <code code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
+                        </act>
+                    </entryRelationship>
+                    
+                    <!-- Option: Use Reference Range, even if you have no range, as in this example 
+                         With this option, should the observation/value still contain unit? -->
+                    <referenceRange>
+                        <observationRange>
+                            <!-- Unit is not required, value can be ANY, though it is typically an IVL_PQ -->
+                            <value xsi:type="PQ" unit="mg/dL" />
+                        </observationRange>
+                    </referenceRange>
+                </observation>
+            </component>
+        </organizer>
+    </entry>
+</section>
