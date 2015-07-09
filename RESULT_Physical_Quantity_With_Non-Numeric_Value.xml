@@ -78,15 +78,15 @@
                     <!-- Typical way, but you lose the distinction between value and unit -->
                     <value xsi:type="ST">Unable to calculate mg/dL</value>
                     
-                    <!-- Option: use two value elements -->
+                    <!-- Option 1 (Not allowed in C-CDA due to 1..1 value element): use two value elements -->
                     <value xsi:type="ST">Unable to calculate</value>
                     <value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
                     
-                    <!-- Option: SC data type (character string with code) 
+                    <!-- Option 2 (Not intended use of data type): SC data type (character string with code) 
                          Code is probably supposed to be the same as the string -->
                     <value xsi:type="SC" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM">Unable to calculate</value>
                     
-                    <!-- Option: Structured sub-components -->
+                    <!-- Option 3 (possible solution): Structured sub-components -->
                     <!-- The following pair of entryRelationships could be used in conjunction with the combined ST value type,
                          so receviers unaware of this structure would still receive a value. 
                          Understand SNOMED in code element is not ideal. Is there a LOINC code for "quantity" ?  -->
@@ -102,14 +102,16 @@
                             <value xsi:type="ST">mg/dL</value>
                         </observation>
                     </entryRelationship>
+                    <!-- Option 4 (possible solution): value + this single entryRelationship
                     <!-- Alternate representation of units as act instead of observation, because UCUM is a coding system -->
+                    <value xsi:type="ST">Unable to calculate</value>
                     <entryRelationship>
                         <act classCode="ACT" moodCode="EVN">
                             <code code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
                         </act>
                     </entryRelationship>
                     
-                    <!-- Option: Use Reference Range, even if you have no range, as in this example 
+                    <!-- Option 5 (possible solution): Use Reference Range, even if you have no range, as in this example 
                          With this option, should the observation/value still contain unit? -->
                     <referenceRange>
                         <observationRange>
