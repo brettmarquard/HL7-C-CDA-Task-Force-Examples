@@ -42,6 +42,7 @@
                         </assignedPerson>
                     </assignedAuthor>
                 </author>
+                <!-- In C-CDA R2 the participant is required. The SNOMED code ="105590001" displayName="Substance" could be used in the participant-->
             </observation>
         </entryRelationship>
     </act>
