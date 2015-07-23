@@ -75,21 +75,17 @@
                          Neither is PQR allowed, because the value element in that node is STILL type=real
                     <value xsi:type="PQ" value="Unable to calculate" unit="mg/dL" /> -->
                     
-                    <!-- Typical way, but you lose the distinction between value and unit -->
-                    <value xsi:type="ST">Unable to calculate mg/dL</value>
+                    <!-- Some systems combine these today, but you lose the distinction between value and unit
+                         This is not a preferred practice
+                    <value xsi:type="ST">Unable to calculate mg/dL</value> -->
                     
-                    <!-- Option 1 (Not allowed in C-CDA due to 1..1 value element): use two value elements -->
+                    <!-- Option 3 (possible solution): Structured sub-components 
+                    	The <value> node contains only the value from OBX-5 (for backwards compatibility 
+                    	supporting receivers who cannot process sub-component entryRelationships).
+                    	The first observation conveys the value from OBX-5 as a string identified by a SNOMED code.
+                    	The second observation conveys the unit from OBX-6 as a string identified by a SNOMED code.
+                    	Note in C-CDA 2.0, all observation/code elements were supposed to draw from LOINC.  -->
                     <value xsi:type="ST">Unable to calculate</value>
-                    <value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
-                    
-                    <!-- Option 2 (Not intended use of data type): SC data type (character string with code) 
-                         Code is probably supposed to be the same as the string -->
-                    <value xsi:type="SC" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM">Unable to calculate</value>
-                    
-                    <!-- Option 3 (possible solution): Structured sub-components -->
-                    <!-- The following pair of entryRelationships could be used in conjunction with the combined ST value type,
-                         so receviers unaware of this structure would still receive a value. 
-                         Understand SNOMED in code element is not ideal. Is there a LOINC code for "quantity" ?  -->
                     <entryRelationship typeCode="COMP">
                         <observation classCode="OBS" moodCode="EVN">
                             <code code="246205007" displayName="quantity" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -102,8 +98,11 @@
                             <value xsi:type="ST">mg/dL</value>
                         </observation>
                     </entryRelationship>
-                    <!-- Option 4 (possible solution): value + this single entryRelationship
-                    <!-- Alternate representation of units as act instead of observation, because UCUM is a coding system -->
+                    
+                    <!-- Option 4 (possible solution): value + act
+                    	The <value> node contains only the value from OBX-5
+                    	The unit is represented as a coded act where the codeSystem is UCUM.
+                    	Note - this could also support non-UCUM units received in OBX-6 via the <originalText> element. -->
                     <value xsi:type="ST">Unable to calculate</value>
                     <entryRelationship>
                         <act classCode="ACT" moodCode="EVN">
@@ -111,6 +110,16 @@
                         </act>
                     </entryRelationship>
                     
+                    
+                    <!----------- Previously rejected options --------------->
+                    <!-- Option 1 (Not allowed in C-CDA due to 1..1 value element): use two value elements -->
+                    <value xsi:type="ST">Unable to calculate</value>
+                    <value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
+                    
+                    <!-- Option 2 (Not intended use of data type): SC data type (character string with code) 
+                         Code is probably supposed to be the same as the string -->
+                    <value xsi:type="SC" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM">Unable to calculate</value>
+
                     <!-- Option 5 (possible solution): Use Reference Range, even if you have no range, as in this example 
                          With this option, should the observation/value still contain unit? -->
                     <referenceRange>
