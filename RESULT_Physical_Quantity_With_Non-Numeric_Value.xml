@@ -71,6 +71,21 @@
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="201310200908+0500"/>
+                    
+                    <!-- Option 4 (possible solution): value + act
+                        PREFERRED OPTION FROM OO WORKGROUP
+                    	The <value> node contains only the value from OBX-5
+                    	The unit is represented as a coded act where the codeSystem is UCUM.
+                    	Note - this could also support non-UCUM units received in OBX-6 via the <originalText> element. -->
+                    <value xsi:type="ST">Unable to calculate</value>
+                    <entryRelationship>
+                        <act classCode="ACT" moodCode="EVN">
+                            <code code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
+                        </act>
+                    </entryRelationship>
+                    
+                    <!-- Other options considered: -->
+                    
                     <!-- This is not allowed, since value must be of XML type=real (decimal or double) 
                          Neither is PQR allowed, because the value element in that node is STILL type=real
                     <value xsi:type="PQ" value="Unable to calculate" unit="mg/dL" /> -->
@@ -98,18 +113,6 @@
                             <value xsi:type="ST">mg/dL</value>
                         </observation>
                     </entryRelationship>
-                    
-                    <!-- Option 4 (possible solution): value + act
-                    	The <value> node contains only the value from OBX-5
-                    	The unit is represented as a coded act where the codeSystem is UCUM.
-                    	Note - this could also support non-UCUM units received in OBX-6 via the <originalText> element. -->
-                    <value xsi:type="ST">Unable to calculate</value>
-                    <entryRelationship>
-                        <act classCode="ACT" moodCode="EVN">
-                            <code code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
-                        </act>
-                    </entryRelationship>
-                    
                     
                     <!----------- Previously rejected options --------------->
                     <!-- Option 1 (Not allowed in C-CDA due to 1..1 value element): use two value elements -->
