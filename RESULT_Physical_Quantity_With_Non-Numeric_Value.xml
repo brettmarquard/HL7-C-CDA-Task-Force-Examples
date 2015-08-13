@@ -72,7 +72,19 @@
                     <statusCode code="completed"/>
                     <effectiveTime value="201310200908+0500"/>
                     
-                    <!-- Option 4 (possible solution): value + act
+                    <!-- Option 42 (possible solution): value + observation/code
+                        TWEAKED PROPOSED OPTION FROM OO WORKGROUP
+                    	The <value> node contains only the value from OBX-5
+                    	Note - this could also support non-UCUM units received in OBX-6 with a value xsi:type=ST element. -->
+                    <value xsi:type="ST">Unable to calculate</value>
+                    <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="246514001" displayName="units" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
+                        </observation>
+                    </entryRelationship>
+                    
+                        <!-- Option 4 (possible solution): value + act
                         PREFERRED OPTION FROM OO WORKGROUP
                     	The <value> node contains only the value from OBX-5
                     	The unit is represented as a coded act where the codeSystem is UCUM.
