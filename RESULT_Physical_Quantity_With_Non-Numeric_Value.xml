@@ -74,14 +74,16 @@
                     
                     <!-- Option 4 (possible solution): value + act
                         PREFERRED OPTION FROM OO WORKGROUP
+                    	The observation/code states this is about units
+                    	The unit is represented as a coded observaion value where the codeSystem is UCUM.
                     	The <value> node contains only the value from OBX-5
-                    	The unit is represented as a coded act where the codeSystem is UCUM.
-                    	Note - this could also support non-UCUM units received in OBX-6 via the <originalText> element. -->
+                    	Note - this could also support non-UCUM units received in OBX-6 via the value xsi:type="ST" element. -->
                     <value xsi:type="ST">Unable to calculate</value>
-                    <entryRelationship>
-                        <act classCode="ACT" moodCode="EVN">
-                            <code code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" />
-                        </act>
+                    <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="246514001" displayName="units" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM"/>
+                        </observation>
                     </entryRelationship>
                     
                     <!-- Other options considered: -->
