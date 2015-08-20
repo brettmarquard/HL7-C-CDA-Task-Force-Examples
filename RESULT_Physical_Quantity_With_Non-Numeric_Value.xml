@@ -20,15 +20,15 @@
                 <tr>
                     <th colspan="4">Lipid Panel, 10/20/2013 9:08 am</th>
                 </tr>
-                <tr>
-                    <td ID="result1">Triglycerides</td>
+                <tr ID="result1">
+                    <td>Triglycerides</td>
                     <td>450</td>
                     <td>mg/dL</td>
                     <td>Abnormal</td>
                     <td>&lt;150 mg/dL</td>
                 </tr>
-                <tr>
-                    <td ID="result2">LDL, Calculated</td>
+                <tr ID="result2">
+                    <td>LDL, Calculated</td>
                     <!-- Example value filed from HL7 interface, paired with a real unit -->
                     <td>Unable to calculate</td>
                     <td>mg/dL</td>
