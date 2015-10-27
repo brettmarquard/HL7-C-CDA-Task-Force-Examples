@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <section>
+        <!-- conforms to Immunizations section with entries optional -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+        <!-- Immunizations section with entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="History of immunizations"/>
+        <title>IMMUNIZATIONS</title>
+        <text>
+            <content ID="immunSect"/>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Vaccine</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="immun1">
+                        <td>influenza, intradermal, quadrivalent</td>
+                        <td>November 22, 2015 </td>
+                        <td>Patient Refused</td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN"
+                negationInd="true">
+                <!-- ** Immunization activity ** -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+                <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+                <text>
+                    <reference value="#immun1"/>
+                </text>
+                <!-- Indicates the status of the substanceAdministartion -->
+                <statusCode code="completed"/>
+                <effectiveTime value="20151122"/>
+                <consumable>
+                    <manufacturedProduct classCode="MANU">
+                        <!-- ** Immunization medication information ** -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                        <manufacturedMaterial>
+                            <code code="166" codeSystem="2.16.840.1.113883.12.292"
+                                displayName="influenza, intradermal, quadrivalent, preservative free"
+                                codeSystemName="CVX"/>
+                            <lotNumberText>1</lotNumberText>
+                        </manufacturedMaterial>
+                        <!-- Optional manufacturerOrganization
+                    				<manufacturerOrganization>
+                     				   <name>Health LS - Immuno Inc.</name>
+                   					 </manufacturerOrganization>-->
+                    </manufacturedProduct>
+                </consumable>
+                <entryRelationship typeCode="RSON">
+                    <observation classCode="OBS" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+                        <id root="c1296315-9a6d-45a2-aac0-ee225d375409"/>
+                        <code displayName="Patient Objection" code="PATOBJ"
+                            codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.5.8"/>
+                        <statusCode code="completed"/>
+                    </observation>								
+                </entryRelationship>
+            </substanceAdministration>
+        </entry>
+    </section>        
+</component>
