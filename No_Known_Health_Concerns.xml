@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <section>
+        <!-- Health Concerns Section (V2) (V1 was added as a NEW template in R2.0, V2 was updated in R2.1) -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2015-08-01"/>
+        <code code="75310-3" displayName="Health Concerns Document"
+            codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        <title>Health Concerns</title>
+        <text ID="HealthConcern_1">No Known Health Concerns</text>
+        <entry typeCode="COMP">
+            <act classCode="ACT" moodCode="EVN" negationInd="true">
+                <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2015-08-01"/>
+                <id root="4eab0e52-dd7d-4285-99eb-72d32ddb195d"/>
+                <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                    displayName="Health Concern"/>
+                <text>
+                    <reference value="#HealthConcern_1"/>
+                </text>
+                <!-- This Health Concern has a statusCode of active because it is an active concern -->
+                <statusCode code="active"/>
+                <!-- The effective time is the date that the Health Concern started being followed - 
+                    this does not necessarily correlate to the onset date of the contained health issues-->
+                <effectiveTime value="20151115"/>
+                <!-- Time at which THIS “concern” began being tracked.-->
+                <!-- Optional Author Element-->
+                <author>
+                    <time value="20151115"/>
+                    <assignedAuthor>
+                        <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                        <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                            codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                        <addr>
+                            <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                            <city>Silver Spring</city>
+                            <state>MD</state>
+                            <postalCode>20901</postalCode>
+                            <country>US</country>
+                        </addr>
+                        <telecom value="tel:+1(301)666-6666" use="WP"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Heartly</given>
+                                <family>Sixer</family>
+                                <suffix>MD</suffix>
+                            </name>
+                        </assignedPerson>
+                    </assignedAuthor>
+                </author>
+            </act>
+        </entry>
+    </section>
+</component>
