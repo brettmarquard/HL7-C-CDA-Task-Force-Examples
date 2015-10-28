@@ -6,7 +6,7 @@
 The reason why we include complete files above is so that we can validate the XML using industry standard tools, such as the NIST TT Validator. 
 
 ### Why?
-*Lots* of people have implemented C-CDA and it's the primary document standard in MU2 and now MU3)
+*Lots* of people have implemented C-CDA and it's the primary document standard in MU2 and now MU3.
 (Note: if you'd like to submit a public sample, shcek@ https://github.com/chb/sample_ccdas)
 
 ### Fine print
