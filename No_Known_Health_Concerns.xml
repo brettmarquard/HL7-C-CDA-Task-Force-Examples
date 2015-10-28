@@ -17,10 +17,10 @@
                     <reference value="#HealthConcern_1"/>
                 </text>
                 <!-- This Health Concern has a statusCode of active because it is an active concern -->
-                <statusCode code="active"/>
+                <statusCode code="completed"/>
                 <!-- The effective time is the date that the Health Concern started being followed - 
                     this does not necessarily correlate to the onset date of the contained health issues-->
-                <effectiveTime value="20151115"/>
+                <effectiveTime value="20151115123506+0500"/>
                 <!-- Time at which THIS “concern” began being tracked.-->
                 <!-- Optional Author Element-->
                 <author>
