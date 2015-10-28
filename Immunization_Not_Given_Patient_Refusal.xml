@@ -8,7 +8,7 @@
         <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
             displayName="History of immunizations"/>
         <title>IMMUNIZATIONS</title>
-        <text ID="immun1">Patient objected to influenza, intradermal, quadrivalent on 11/15/2015</text>
+        <text><paragraph ID="immun1">Patient objected to <content ID="ImmunizationProduct_1">influenza, intradermal, quadrivalent</content> on 11/15/2015</paragraph></text>
         <entry typeCode="COMP">
             <substanceAdministration classCode="SBADM" moodCode="EVN"
                 negationInd="true">
@@ -28,7 +28,11 @@
                         <manufacturedMaterial>
                             <code code="166" codeSystem="2.16.840.1.113883.12.292"
                                 displayName="influenza, intradermal, quadrivalent, preservative free"
-                                codeSystemName="CVX"/>
+                                codeSystemName="CVX">
+                                <originalText>
+                                    <reference value="#ImmunizationProduct_1"/>
+                                </originalText>
+                            </code>
                             <lotNumberText>1</lotNumberText>
                         </manufacturedMaterial>
                         <!-- Optional manufacturerOrganization
