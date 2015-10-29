@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
+    <!-- No known health concerns is different than no information about health concerns --> 
+    <!-- This example records assertion of no concerns -->
     <section>
         <!-- Health Concerns Section (V2) (V1 was added as a NEW template in R2.0, V2 was updated in R2.1) -->
         <templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2015-08-01"/>
         <code code="75310-3" displayName="Health Concerns Document"
             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <title>Health Concerns</title>
-        <text ID="HealthConcern_1">No Known Health Concerns</text>
+        <text><paragraph ID="HealthConcern_1">No Known Health Concerns on 11/15/2015</paragraph></text>
         <entry typeCode="COMP">
+            <!-- negationInd=true indicates no known health concerns at the stated time-->
             <act classCode="ACT" moodCode="EVN" negationInd="true">
                 <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2015-08-01"/>
                 <id root="4eab0e52-dd7d-4285-99eb-72d32ddb195d"/>
@@ -16,7 +19,7 @@
                 <text>
                     <reference value="#HealthConcern_1"/>
                 </text>
-                <!-- This Health Concern has a statusCode of active because it is an active concern -->
+                <!-- This Health Concern has a statusCode of concern because assertion is complete -->
                 <statusCode code="completed"/>
                 <!-- The effective time is the date that the Health Concern started being followed - 
                     this does not necessarily correlate to the onset date of the contained health issues-->
