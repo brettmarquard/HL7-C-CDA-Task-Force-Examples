@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <!-- here is the optional Plan of Treatment -->
+    <!-- Plan for Clindamycin 300mg , RxNorm code – 748747, TID, if pain does not subside by the end of the day.-->
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10"
+            extension="2014-06-09"/>
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
+        <title>Plan of Treatment</title>
+        <!-- one Planned medication in the human readable text and as a discrete entry -->
+        <text>
+            <!-- this section may contain many different Planned items, so we use the table caption to help identify each -->
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Planned Medication</th>
+                        <th>Instructions</th>
+                        <th>Dosage</th>
+                        <th>Effective Dates (start - stop)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="Medication_1">
+                        <td>
+                            <content ID="MedicationName_1" xmlns="urn:hl7-org:v3">Clindamycin 300 MG</content>
+                        </td>
+                        <td>
+                            <content ID="MedicationSig_1" xmlns="urn:hl7-org:v3">take every 8 hours if pain does not subside by the end of the day</content>
+                        </td>
+                        <td/>
+                        <td>June-22-2015 - </td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <!-- a planned medication entry -->
+        <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+                <!-- This medication use case is a medication to be administered. If it has been already administered use moodCode = "EVN". If an ordered drug then use moodCode = "RQO" -->
+                <!-- Dependencies exist between moodCode, statusCode and effectiveTime  -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.42" extension="2014-06-09"/>
+                <id root="55a199af-3373-4a74-a766-27cea1ea0b46"/>
+                <text>
+                    <!-- This reference refers to medication information in unstructured portion of section-->
+                    <reference value="#Medication_1"/>
+                </text>
+                <statusCode code="active"/>
+                <!-- This first effectiveTime shows that medication was prescribed on January 18, 2014 (not known to have stopped)-->
+                <effectiveTime xsi:type="IVL_TS">
+                    <low value="20150622"/>
+                    <high nullFlavor="NI"/>
+                </effectiveTime>
+                <!-- This second effectiveTime represents every 8 hours from medication sig. -->
+                <!-- InstituionSpecified = "false" is implied in ths omission of this attribute and means that it must be administered exactly once per day-->
+                <!-- InstituionSpecified = "true"which is not default would mean that receiving institution has flexibility in dosing schedule-->
+                <!-- Operator "A" means that this timing information is in addition to previous effectiveTime information provided-->
+                <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                    <period value="8" unit="h"/>
+                </effectiveTime>
+                <consumable>
+                    <manufacturedProduct classCode="MANU">
+                        <!-- ** Medication information ** -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                        <id root="c195b8ec-9ef4-400e-8e35-9b7710703180"/>
+                        <manufacturedMaterial>
+                            <!-- Medications should be specified at a level corresponding to prescription when possible, such as 30mg oral tablet (branded)-->
+                            <code code="748747" displayName="Clindamycin 300 MG" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                                <originalText>
+                                    <reference value="#MedicationName_1"/>
+                                </originalText>
+                            </code>
+                        </manufacturedMaterial>
+                    </manufacturedProduct>
+                </consumable>
+            </substanceAdministration>
+        </entry>
+      </section>
+</component>
