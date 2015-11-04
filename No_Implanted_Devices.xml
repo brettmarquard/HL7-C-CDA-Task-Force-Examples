@@ -28,8 +28,8 @@
                         <id nullFlavor="NA" root="2.16.840.1.113883.3.3719"/>  
                         <playingDevice>
                             <!-- Is Biomedical Device acceptable? -->
-                            <code code="63653004" codeSystem="2.16.840.1.113883.6.96"   
-                                displayName="Biomedical Device"/>
+                            <code code="40388003" codeSystem="2.16.840.1.113883.6.96"   
+                                displayName="Implant"/>
                         </playingDevice>
                         <scopingEntity>
                             <id root="2.16.840.1.113883.3.3719"/>
