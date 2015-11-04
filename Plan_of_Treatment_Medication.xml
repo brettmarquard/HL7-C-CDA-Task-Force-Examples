@@ -3,6 +3,7 @@
     <!-- here is the optional Plan of Treatment -->
     <!-- Plan for Clindamycin 300mg , RxNorm code – 748747, TID, if pain does not subside by the end of the day.-->
     <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
         <templateId root="2.16.840.1.113883.10.20.22.2.10"
             extension="2014-06-09"/>
         <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
@@ -40,6 +41,7 @@
             <substanceAdministration classCode="SBADM" moodCode="INT">
                 <!-- This medication use case is a medication to be administered. If it has been already administered use moodCode = "EVN". If an ordered drug then use moodCode = "RQO" -->
                 <!-- Dependencies exist between moodCode, statusCode and effectiveTime  -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.42"/>
                 <templateId root="2.16.840.1.113883.10.20.22.4.42" extension="2014-06-09"/>
                 <id root="55a199af-3373-4a74-a766-27cea1ea0b46"/>
                 <text>
