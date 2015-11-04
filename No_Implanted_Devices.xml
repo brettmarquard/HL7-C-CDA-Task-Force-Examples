@@ -27,7 +27,6 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
                         <id nullFlavor="NA" root="2.16.840.1.113883.3.3719"/>  
                         <playingDevice>
-                            <!-- Is Biomedical Device acceptable? -->
                             <code code="40388003" codeSystem="2.16.840.1.113883.6.96"   
                                 displayName="Implant"/>
                         </playingDevice>
