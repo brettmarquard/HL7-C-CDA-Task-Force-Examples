@@ -8,6 +8,7 @@
         <code code="75310-3" displayName="Health Concerns Document"
             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <title>Health Concerns</title>
+        <!--Including ID at text element is allowed -->
         <text ID="HealthConcern_1">No Known Health Concerns on 11/15/2015</text>
         <entry typeCode="COMP">
             <!-- negationInd=true indicates no known health concerns at the stated time-->
