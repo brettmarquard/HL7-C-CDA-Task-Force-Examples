@@ -8,7 +8,7 @@
         <code code="75310-3" displayName="Health Concerns Document"
             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <title>Health Concerns</title>
-        <text><paragraph ID="HealthConcern_1">No Known Health Concerns on 11/15/2015</paragraph></text>
+        <text ID="HealthConcern_1">No Known Health Concerns on 11/15/2015</text>
         <entry typeCode="COMP">
             <!-- negationInd=true indicates no known health concerns at the stated time-->
             <act classCode="ACT" moodCode="EVN" negationInd="true">
@@ -19,13 +19,15 @@
                 <text>
                     <reference value="#HealthConcern_1"/>
                 </text>
-                <!-- This Health Concern has a statusCode of concern because assertion is complete -->
-                <statusCode code="completed"/>
+                <!-- This Health Concern has a statusCode of concern because assertion is ongoing -->
+                <statusCode code="active"/>
                 <!-- The effective time is the date that the Health Concern started being followed - 
                     this does not necessarily correlate to the onset date of the contained health issues-->
                 <effectiveTime value="20151115123506+0500"/>
                 <!-- Time at which THIS “concern” began being tracked.-->
                 <!-- Optional Author Element-->
+                <!-- This is different then No Known Problems in that we aren't requiring declaration that no concerns
+                for each of the potential 30+ choices available.-->
                 <author>
                     <time value="20151115"/>
                     <assignedAuthor>
