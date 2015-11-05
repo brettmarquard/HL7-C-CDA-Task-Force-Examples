@@ -10,7 +10,8 @@
             Concern Tracker Start Date: 12/01/2015 16:05:06<br/>
             Concern Tracker End Date: <br/>
             Concern Status: Active<br/>
-            <content ID="problems1">No history of <content ID="problemType1">diabetes.</content></content>
+            <content ID="problems1">Ruled out <content ID="problemType1">diabetes.</content></content>
+              <!-- The statement above and the associated problem observation could be placed in the History of Past Illness Section -->
         </text>
         <entry typeCode="DRIV">
             <!-- Problem Concern Act -->	
@@ -47,6 +48,8 @@
                     </assignedAuthor>
                 </author>
                 <entryRelationship typeCode="SUBJ">
+                    <!-- This problem observation could be placed in the History of Past Illness Section -->
+                    <!-- Or, in future, in the Health Concerns Section -->
                     <observation classCode="OBS" moodCode="EVN" negationInd="true">
                         <!-- Model of Meaning for No Diabetes -->
                         <!-- The use of negationInd corresponds with the newer Observation.ValueNegationInd -->
