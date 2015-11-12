@@ -20,9 +20,7 @@
                 </thead>
                 <tbody>
                     <tr ID="ID0EFFFFFFCAB2">
-                        <td>
-                            <content ID="ID0EFAAAAACAB2">EKG 12 channel panel</content>
-                        </td>
+                        <td ID="ID0EFAAAAACAB2">EKG 12 channel panel</td>
                         <td>June 23, 2015</td>
                         <td/>
                     </tr>
