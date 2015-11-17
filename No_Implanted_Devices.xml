@@ -7,7 +7,7 @@
         <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
         <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES"/>
         <title>PROCEDURES</title>
-        <text><paragraph ID="Proc">No Procedure information. UDI: No implanted devices</paragraph></text>				
+        <text><paragraph ID="Proc1">No Procedure information. UDI: No implanted devices</paragraph></text>				
         <entry>
             <procedure classCode="PROC" moodCode="EVN" negationInd="true">
                 <!-- Procedure Activity Procedure V2-->
