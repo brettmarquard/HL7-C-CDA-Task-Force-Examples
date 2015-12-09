@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <component>
         <section>
             <!-- Health Concerns Section -->
@@ -63,79 +62,11 @@
                             <statusCode code="completed" />
                         </act>
                     </entryRelationship>
-                    <!-- 
-        This is an entry relationship of the SPRT (support) type which shows 
-        that the productive cough supports the Health Concern (Problem: Respiratory 
-        Insufficiency and Diagnosis: Pneumonia
-        This entryRelationship represents the relationship: 
-         Health Concern HAS SUPPORT Observation
-       -->
-                    <entryRelationship typeCode="SPRT">
-                        <!-- Problem Observation (V2) -->
-                        <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09"/>
-                            <id root="01cb0d7a-46e2-4367-b38b-9465ffbf64e3"/>
-                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-                            <statusCode code="completed"/>
-                            <effectiveTime>
-                                <!-- Onset date -->
-                                <low value="20140215"/>
-                            </effectiveTime>
-                            <value xsi:type="CD" code="28743005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Productive cough"/>
-                        </observation>
-                    </entryRelationship>
-                    <!-- Priority Preference -->
-                    <entryRelationship typeCode="RSON">
-                        <!-- Priority Preference - this is the preference that the patient (specified by the Author Participation template)
-                  places on the Health Concern -->
-                        <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.143"/>
-                            <id root="a5b64706-9438-4d13-8dcf-651da3ef83bf"/>
-                            <code code="225773000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Preference"/>
-                            <value xsi:type="CD" code="394849002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="High priority"/>
-                            <!--
-                    Author Participation Template
-                    In this case, the author is the same as the record target (the patient) already described in the header. 
-                  -->
-                            <author>
-                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-                                <time value="20130801"/>
-                                <assignedAuthor>
-                                    <!-- This id points back to the record target in the header -->
-                                    <id extension="444222222" root="2.16.840.1.113883.4.1"/>
-                                </assignedAuthor>
-                            </author>
-                        </observation>
-                    </entryRelationship>
-                    <!--  Priority Preference - this is the preference that the provider (specified by the Author Participation template)
-                places on the Health Concern -->
-                    <entryRelationship typeCode="RSON">
-                        <!--  Priority Preference -->
-                        <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.143"/>
-                            <id root="7d66f448-ba82-4291-a9da-9e5db5e58803"/>
-                            <code code="225773000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="preference"/>
-                            <value xsi:type="CD" code="394849002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="High priority"/>
-                            <!--
-                    Author Participation Template
-                    In this case, the author is the same as a participant already described in the header. 
-                    However, the author could be a different provider - someone else in the header, or a new provider not elsewhere specified.
-                                    -->
-                            <author>
-                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-                                <time value="20130801"/>
-                                <assignedAuthor>
-                                    <!-- This id points back to a participant in the header -->
-                                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
-                                </assignedAuthor>
-                            </author>
-                        </observation>
-                    </entryRelationship>
-                </act>
+            </act>
             </entry>
         </section>
     </component>
-    <component>   
+    <component> 
     <section>
         <!-- Located elsewhere in the document -->
         <!-- Taken directly (changed observation/id) from prior example https://github.com/brettmarquard/HL7-C-CDA-Task-Force-Examples/blob/master/Problem_List_Active_Problem.xml -->
