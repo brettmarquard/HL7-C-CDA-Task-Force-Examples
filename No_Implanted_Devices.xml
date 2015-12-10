@@ -2,12 +2,11 @@
 <!-- ************** PROCEDURES and UDI ***************** -->
 <component>
     <section>
-        <!-- Procedures Section (entries required) (V2) -->
-        <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
-        <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
-        <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES"/>
-        <title>PROCEDURES</title>
-        <text><paragraph ID="Proc">No Procedure information. UDI: No implanted devices</paragraph></text>				
+        <!-- Medical equipment section -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
+        <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" />
+        <title>MEDICAL EQUIPMENT</title>
+        <text><paragraph ID="Proc">Patient has no history of implantable devices</paragraph></text>				
         <entry>
             <procedure classCode="PROC" moodCode="EVN" negationInd="true">
                 <!-- Procedure Activity Procedure V2-->
@@ -15,16 +14,16 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
                 <id root="d5b614bd-01ce-410d-8726-e1fd01dcc72a" />
                 <code code="71388002" codeSystem="2.16.840.1.113883.6.96"   
-                    displayName="Procedure">
-                    <originalText>
-                        <reference value="#Proc1" />
-                    </originalText>
-                </code>
+                    displayName="Procedure"/>
+                <text>
+                    <reference value="#Proc"/>
+                </text>
                 <statusCode code="completed" />
                 <effectiveTime nullFlavor="NA" />
                 <participant typeCode="DEV">
                     <participantRole classCode="MANU">
                         <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                        <!-- No UDI since no procedure -->
                         <id nullFlavor="NA" root="2.16.840.1.113883.3.3719"/>  
                         <playingDevice>
                             <code code="40388003" codeSystem="2.16.840.1.113883.6.96"   
