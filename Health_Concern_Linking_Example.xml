@@ -52,7 +52,7 @@
 				</observation>
 				</entryRelationship>
 				<!-- Health Concern Problem: Community Acquired Pneumonia -->
-				<!-- This Entry Reference refers to a problem entry present in Problem List that the Health Concern is related to-->
+				<!-- This Entry Reference refers to a problem observation present in Problem List that the Health Concern is related to-->
 				<entryRelationship typeCode="REFR">
 					<act classCode="ACT" moodCode="EVN">
 						<templateId root="2.16.840.1.113883.10.20.22.4.122" />
