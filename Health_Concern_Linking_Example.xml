@@ -18,7 +18,7 @@
 						<td ID="Concern1Issue1">Patient is concerned about being contagious and infecting roommate.</td>
 						<td>Concern from 03/02/2014</td>
 						<!-- Providing this as a link to the related problem in problem list is an option using base CDA implementation guidance. -->
-						<td><linkHtml href="#Problem1">Community Acquired Pneumonia</linkHtml></td>
+						<td>Community Acquired Pneumonia</td>
 					</tr>
 				</tbody>
 			</table>
