@@ -6,11 +6,24 @@
         <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
         <title>PROBLEMS</title>
         <text ID="Concern_1">
-            Problem Concern:<br/>
-            Concern Tracker Start Date: 12/01/2015 16:05:06<br/>
-            Concern Tracker End Date: <br/>
-            Concern Status: Active<br/>
-            <content ID="problems1">Ruled out <content ID="problemType1">diabetes.</content></content>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Start Time:</td>
+                        <td>End Time:</td>
+                        <td>Status:</td>
+                        <td>Problem:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="problems1">
+                        <td>12/01/2015 16:05:06</td>
+                        <td></td>
+                        <td>Active</td>
+                        <td id="problem1">No Diabetes (ruled out)</td>
+                    </tr>
+                </tbody>
+            </table>
               <!-- The statement above and the associated problem observation could be placed in the History of Past Illness Section -->
         </text>
         <entry typeCode="COMP">
@@ -74,7 +87,7 @@
                             displayName="Diabetes Mellitus Type 2 (Disorder)"
                             codeSystem="2.16.840.1.113883.6.96"
                             codeSystemName="SNOMED CT">
-                            <originalText><reference value="#problemType1"></reference></originalText>
+                            <originalText><reference value="#problem1"></reference></originalText>
                         </value>
                     </observation>
                 </entryRelationship>
