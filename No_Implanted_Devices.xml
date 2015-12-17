@@ -6,6 +6,8 @@
         <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
         <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" />
         <title>MEDICAL EQUIPMENT</title>
+        <! -- Alternative text: Patient has no history of procedures with implantable devices'-->
+        <! -- Alternative text: Patient has no implanted devices'-->
         <text><paragraph ID="Proc">Patient has no history of implantable devices</paragraph></text>				
         <entry>
             <procedure classCode="PROC" moodCode="EVN" negationInd="true">
@@ -23,7 +25,7 @@
                 <participant typeCode="DEV">
                     <participantRole classCode="MANU">
                         <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                        <!-- No UDI since no procedure -->
+                        <!-- UDI is 'not applicable' since no procedure -->
                         <id nullFlavor="NA" root="2.16.840.1.113883.3.3719"/>  
                         <playingDevice>
                             <code code="40388003" codeSystem="2.16.840.1.113883.6.96"   
