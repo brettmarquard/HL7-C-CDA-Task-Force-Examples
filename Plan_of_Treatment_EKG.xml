@@ -29,10 +29,9 @@
         </text>
         <!-- a planned observation entry -->
         <entry>
-            <!-- encounter with moodCode indicating Intent -->
+            <!-- observation with moodCode indicating Intent -->
             <observation classCode="OBS" moodCode="INT">
-                <templateId root="2.16.840.1.113883.10.20.22.4.44" 
-                    extension="2014-06-09"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
                 <id root="b52bee94-c34b-4e2c-8c15-5ad9d6def205" />
                 <code code="34534-8" 
                     codeSystem="2.16.840.1.113883.6.1" 
