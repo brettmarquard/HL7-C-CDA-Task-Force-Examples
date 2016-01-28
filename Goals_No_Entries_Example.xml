@@ -4,43 +4,24 @@
         <templateId root="2.16.840.1.113883.10.20.22.2.60"/>
         <code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <title>Goals Section</title>
-        <text>
-            <table border="1" width="100%">
-                <thead>
-                    <tr>
-                        <th>Goal</th>
-                        <th>Value</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pulse oximetry</td>
-                        <td>92%</td>
-                        <td>September 2, 2013</td>
-                    </tr>
-                </tbody>
-            </table>
-            <paragraph styleCode="Bold">Patient priority:</paragraph> high priority <paragraph styleCode="Bold">Provider
-                priority:</paragraph> high priority<br/>
-        </text>
-        <entry nullFlavor="NI">
+        <text><paragraph ID="Goals">Patient is targeting a pulse oximetry of 92% and a weight of 195 lbs</paragraph></text>
+        <entry>
             <!-- Goal Observation -->
-            <!-- No information on the Goal -->
             <observation classCode="OBS" moodCode="GOL">
                 <!-- Goal Observation -->
                 <templateId root="2.16.840.1.113883.10.20.22.4.121"/>
-                <id nullFlavor="NI"/>
-                <code nullFlavor="NI"/>
+                <!-- If you have an id for your goal, include here -->
+                <id nullFlavor="UNK"/>
+                <code nullFlavor="UNK"/>
+                <text><reference value="#Goals"></reference></text>
                 <statusCode code="active"/>
-                <effectiveTime value="20130902"/>
-                <!-- Author is required -->
-                <!-- No information on the author -->
-                <author nullFlavor="NI">
+                <!-- Author is required and should be present if system tracks -->
+                <!-- If unknown a nullFlavor of UNK is acceptable -->
+                <author>
                     <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-                    <time nullFlavor="NI"/>
-                    <assignedAuthor nullFlavor="NI">
-                        <id nullFlavor="NI"/>
+                    <time value="20100103"/>
+                    <assignedAuthor>
+                        <id extension="99999999" root="2.16.840.1.113883.4.6"/>
                     </assignedAuthor>
                 </author>
             </observation>
