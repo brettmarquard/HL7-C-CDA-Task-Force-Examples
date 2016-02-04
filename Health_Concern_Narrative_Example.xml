@@ -1,7 +1,7 @@
 <component>
     <section>
         <!-- Health Concerns Section -->
-        <templateId root="2.16.840.1.113883.10.20.22.2.58"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2015-08-01"/>
         <code code="75310-3" displayName="Health Concerns Document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <title>Health Concerns</title>
         <text><paragraph ID="Concern">On March 1, 2014, the patient expressed concern about spreading their Community Acquired Pneumonia.</paragraph></text>
