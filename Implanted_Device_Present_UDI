@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ************** PROCEDURES and UDI ***************** -->
+<component>
+    <section>
+        <!-- Medical equipment section -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
+        <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" />
+        <title>MEDICAL EQUIPMENT</title>
+          <text><paragraph ID="Proc">Patient has a Cardiac Pacemaker</paragraph></text>				
+        <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+                <!-- Procedure Activity Procedure V2-->
+                <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+                <id root="d5b614bd-01ce-410d-8726-e1fd01dcc72b" />
+                <code code="71388002" codeSystem="2.16.840.1.113883.6.96"   
+                    displayName="Procedure"/>
+                <text>
+                    <reference value="#Proc"/>
+                </text>
+                <statusCode code="completed"/>
+                <effectiveTime nullFlavor="UNK"/>
+                <participant typeCode="DEV">
+                    <participantRole classCode="MANU">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                        <!-- UDI -->
+                        <id extension="(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234"
+                        root="2.16.840.1.113883.3.3719"/>  
+                        <playingDevice>
+                            <code code="40388003" codeSystem="2.16.840.1.113883.6.96"   
+                                displayName="Implant"/>
+                        </playingDevice>
+                        <scopingEntity>
+                            <id root="2.16.840.1.113883.3.3719"/>
+                        </scopingEntity>
+                    </participantRole>
+                </participant>	
+            </procedure>
+        </entry>
+    </section>
+</component>
