@@ -7,6 +7,8 @@
         <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" />
         <title>MEDICAL EQUIPMENT</title>
           <text><paragraph ID="Proc">Patient has a Cardiac Pacemaker</paragraph></text>				
+          <!-- Systems will need to decide whether to include UDI in narrative or not include and expect 
+          systems to parse product instance id -->
         <entry>
             <procedure classCode="PROC" moodCode="EVN">
                 <!-- Procedure Activity Procedure V2-->
