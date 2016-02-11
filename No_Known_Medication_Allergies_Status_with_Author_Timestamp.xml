@@ -48,7 +48,14 @@
                             </assignedPerson>
                         </assignedAuthor>
                     </author>     
-                    <!-- In C-CDA R2 the participant is required. The SNOMED code ="410942007" displayName="drug or medication" could be used in the participant-->
+                    <!-- In C-CDA R2.1 the participant is required. -->
+                    <participant typeCode="CSM">
+	        	        <participantRole classCode="MANU">
+				            <playingEntity classCode="MMAT">
+					            <code nullFlavor="NA"/>
+				            </playingEntity>
+			            </participantRole>
+		            </participant>    
                 </observation>
             </entryRelationship>
         </act>
