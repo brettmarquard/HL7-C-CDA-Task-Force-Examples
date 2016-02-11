@@ -30,8 +30,7 @@
                     <statusCode code="completed"/>
                     <!-- N/A - author/time records when this assertion was made -->
                     <effectiveTime nullFlavor="NA"/>
-                    <value xsi:type="CD" code="416098002"
-                        displayName="Drug allergy (disorder)"
+                    <value xsi:type="CD" code="416098002" displayName="Drug allergy (disorder)"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     <author>
                         <time value="20140104123506+0500"/>
@@ -47,15 +46,15 @@
                                 </name>
                             </assignedPerson>
                         </assignedAuthor>
-                    </author>     
+                    </author>
                     <!-- In C-CDA R2.1 the participant is required. -->
                     <participant typeCode="CSM">
-	        	        <participantRole classCode="MANU">
-				            <playingEntity classCode="MMAT">
-					            <code nullFlavor="NA"/>
-				            </playingEntity>
-			            </participantRole>
-		            </participant>    
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code nullFlavor="NA"/>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
                 </observation>
             </entryRelationship>
         </act>
