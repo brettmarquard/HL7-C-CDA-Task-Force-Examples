@@ -44,12 +44,12 @@
                 </author>
                 <!-- In C-CDA R2.1 the participant is required. -->
                 <participant typeCode="CSM">
-				    <participantRole classCode="MANU">
-					    <playingEntity classCode="MMAT">
-						    <code nullFlavor="NA"/>
-						</playingEntity>
-					</participantRole>
-				</participant>
+	        	<participantRole classCode="MANU">
+				<playingEntity classCode="MMAT">
+					<code nullFlavor="NA"/>
+				</playingEntity>
+			</participantRole>
+		</participant>
             </observation>
         </entryRelationship>
     </act>
