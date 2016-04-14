@@ -1,6 +1,6 @@
 <!-- I) (Adapted)	Laboratory Tests and Values/Results
-							•	CO2, [LOINC: 2028-9], Select (23-29) mmol/L, 8/15/2012 
-							Adapted from https://github.com/benjaminflessner/HL7-C-CDA-Task-Force-Examples/blob/master/Results%20CO2%20Example.xml
+			CO2, [LOINC: 2028-9], Select (23-29) mmol/L, 8/15/2012 
+			Adapted from https://github.com/benjaminflessner/HL7-C-CDA-Task-Force-Examples/blob/master/Results%20CO2%20Example.xml
 				-->
 <section>
     <!-- Results Section with Coded Entries Required-->
