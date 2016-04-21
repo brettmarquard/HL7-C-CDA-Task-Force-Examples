@@ -20,7 +20,7 @@
             </list>
             <paragraph styleCode="Bold" ID="BSex_Narrative1">Birth Sex: <content ID="BSex_value">Female</content></paragraph>
         </text>
-        <entry><!-- New Birth Sex Entry -->
+        <entry><!-- New PROPOSED Birth Sex Entry - Will be proposed for new C-CDA R2.1 Companion Guide -->
             <observation classCode="OBS" moodCode="EVN">
             	<!-- New templateId for Birth Sex -->
             	<!-- Not planning to assert conformance to Social History Observation due to different vocab -->
