@@ -1,0 +1,81 @@
+<component>
+    <!-- Adapted from prior sample C)	Social History 3.10.3 Never Smoker in Smoking Status
+					•	Smoking Status: Never smoker, [SNOMED-CT: 266919005] 
+					
+				from Representative example, but then modified for test data specifics: https://github.com/jddamore/HL7-Task-Force-Examples/blob/master/SMOKING_Never_Smoker.xml
+				-->
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+        <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+        <title>Social History</title>
+        <text>
+            <list>
+                <caption>Smoking Status</caption>
+                <item>
+                    <content>Never smoked</content>
+                    <content>Started: </content>
+                    <content>Stopped:</content>
+                    <content>Recorded August 15, 2012 08:00am</content>
+                </item>
+            </list>
+            <content styleCode="Bold" ID="BS_Narrative1"> Birth Sex: Female</content>
+        </text>
+        <entry><!-- New Birth Sex Entry -->
+            <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.68.99999"/>
+                <code code="76689-9" codeSystem="2.16.840.1.113883.6.1" 
+                    displayName="Sex Assigned At Birth"/>
+                <text>
+                    <reference value="#BS_Narrative1"/>
+                </text>
+                <statusCode code="completed"/>
+                <!-- If present should match birthTime -->
+                <effectiveTime/>
+                <value xsi:type="CD" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" 
+                    code="F" displayName="Female"/>
+            </observation>
+        </entry>
+        
+        <!-- A best practice is to only include one smoking status per patient to avoid confusion. -->
+        <!-- While multiple smoking statuses are permissible in C-CDA 1.1, a cardinality revision in C-CDA 2.0 is proposed. -->
+        <entry>
+            <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+                <id root="a8b9ba43-c0ed-4b9b-9f12-f435d8ad4d57"/>
+                <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                <statusCode code="completed"/>
+                <!-- effectiveTime/low is no longer required based on R1.1 errata 596 (http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=596) -->
+                <!-- nullFlavor is appropriate when smoking status is never a smoker. Other nullFlavors have been discussed and may be appropriate -->
+                <!-- Prior to errata 596 effectiveTime/low was required and the example task force put nullFlavor there: low nullFlavor="NA" -->
+                <effectiveTime nullFlavor="NA"/>
+                <!-- The use of a specfic SNOMED code for unknown smoker is an encouraged variation from C-CDA practices in other sections -->
+                <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266919005" displayName="Never Smoker"/>
+                <author>
+                    <time value="201208150800+0500"/>
+                    <assignedAuthor>
+                        <!-- this provider has an id, but it is not an NPI  -->
+                        <id extension="91138" root="1.3.6.1.4.1.42424242.4.99930.4"/>
+                        <!-- the provider is a Registered Nurse -->
+                        <code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="163W00000X" displayName="Registered Nurse"/>
+                        <addr use="WP">
+                            <streetAddressLine>Get Well Clinic</streetAddressLine>
+                            <streetAddressLine>1004 Healthcare Dr</streetAddressLine>
+                            <city>Protland</city>
+                            <state>OR</state>
+                            <postalCode>97005</postalCode>
+                            <country>US</country>
+                        </addr>
+                        <telecom value="tel:+1-(555)555-1014" use="WP"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Nancy</given>
+                                <family>Nightingale</family>
+                                <suffix qualifier="TITLE">RN</suffix>
+                            </name>
+                        </assignedPerson>
+                    </assignedAuthor>
+                </author>
+            </observation>
+        </entry>
+    </section>
+</component>		
