@@ -41,6 +41,32 @@
 				<reference value="#BSex_value"/>
 			</originalText>
 		</value>
+		<author>
+                <!-- Time documented -->
+                    <time value="201208150800-0500"/>
+                    <assignedAuthor>
+                        <!-- this provider has an id, but it is not an NPI  -->
+                        <id extension="91138" root="1.3.6.1.4.1.42424242.4.99930.4"/>
+                        <!-- the provider is a Registered Nurse -->
+                        <code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="163W00000X" displayName="Registered Nurse"/>
+                        <addr use="WP">
+                            <streetAddressLine>Get Well Clinic</streetAddressLine>
+                            <streetAddressLine>1004 Healthcare Dr</streetAddressLine>
+                            <city>Protland</city>
+                            <state>OR</state>
+                            <postalCode>97005</postalCode>
+                            <country>US</country>
+                        </addr>
+                        <telecom value="tel:+1-(555)555-1014" use="WP"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Nancy</given>
+                                <family>Nightingale</family>
+                                <suffix qualifier="TITLE">RN</suffix>
+                            </name>
+                        </assignedPerson>
+                    </assignedAuthor>
+                </author>
             </observation>
         </entry>
         
@@ -59,7 +85,7 @@
                 <!-- The use of a specfic SNOMED code for unknown smoker is an encouraged variation from C-CDA practices in other sections -->
                 <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266919005" displayName="Never Smoker"/>
                 <author>
-                    <time value="201208150800+0500"/>
+                    <time value="201208150800-0500"/>
                     <assignedAuthor>
                         <!-- this provider has an id, but it is not an NPI  -->
                         <id extension="91138" root="1.3.6.1.4.1.42424242.4.99930.4"/>
