@@ -18,21 +18,29 @@
                     <content>Recorded August 15, 2012 08:00am</content>
                 </item>
             </list>
-            <content styleCode="Bold" ID="BS_Narrative1"> Birth Sex: Female</content>
+            <paragraph styleCode="Bold" ID="BSex_Narrative1">Birth Sex: <content ID="BSex_value">Female</content></paragraph>
         </text>
         <entry><!-- New Birth Sex Entry -->
             <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.68.99999"/>
+            	<!-- New templateId for Birth Sex -->
+            	<!-- Not planning to assert conformance to Social History Observation due to different vocab -->
+                <templateId root="NEEDS-ASSIGNMENT-FROM-SDWG"/>
                 <code code="76689-9" codeSystem="2.16.840.1.113883.6.1" 
                     displayName="Sex Assigned At Birth"/>
                 <text>
-                    <reference value="#BS_Narrative1"/>
+                    <reference value="#BSex_Narrative1"/>
                 </text>
                 <statusCode code="completed"/>
-                <!-- If present should match birthTime -->
-                <effectiveTime/>
+                <!-- effectiveTime if present should match birthTime -->
+                <!-- May need to create a new C-CDA value set Birth Sex V3 AdministrativeGender codes M, F 
+                     and guidance for nullFlavor='UNK'-->
+                <!-- Check QRDA to see if value set already exists-->
                 <value xsi:type="CD" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" 
-                    code="F" displayName="Female"/>
+                    code="F" displayName="Female">
+                	<originalText>
+				<reference value="#BSex_value"/>
+			</originalText>
+		</value>
             </observation>
         </entry>
         
