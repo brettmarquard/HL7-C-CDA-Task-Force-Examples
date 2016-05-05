@@ -40,11 +40,10 @@
                 <reference value="#TS_Narrative1"/>
             </text>
             <statusCode code="completed"/>
-            <effectiveTime>
+            <value xsi:type="IVL_TS">
                 <low value="20120815"/>
                 <high value="2015815"/>
-            </effectiveTime>
-            <value xsi:type="CD" nullFlavor='NA'/>
+            </value
         </observation>
     </entry>
     <entry typeCode="DRIV">
