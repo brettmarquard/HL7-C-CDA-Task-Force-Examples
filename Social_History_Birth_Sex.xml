@@ -34,7 +34,7 @@
                 <!-- effectiveTime if present should match birthTime -->
                 <!-- May need to create a new C-CDA value set Birth Sex V3 AdministrativeGender codes M, F 
                      and guidance for nullFlavor='UNK'-->
-                <!-- Check QRDA to see if value set already exists-->
+                <!-- Request  name change to QRDA value set - ONC Birth Sex -->
                 <value xsi:type="CD" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" 
                     code="F" displayName="Female">
                 	<originalText>
