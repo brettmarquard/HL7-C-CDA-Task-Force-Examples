@@ -24,7 +24,7 @@
             <observation classCode="OBS" moodCode="EVN">
             	<!-- New templateId for Birth Sex -->
             	<!-- Not planning to assert conformance to Social History Observation due to different vocab -->
-                <templateId root="NEEDS-ASSIGNMENT-FROM-SDWG"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.200"/>
                 <code code="76689-9" codeSystem="2.16.840.1.113883.6.1" 
                     displayName="Sex Assigned At Birth"/>
                 <text>
