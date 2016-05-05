@@ -9,6 +9,7 @@
         <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
         <title>Social History</title>
         <text>
+            <paragraph styleCode="Bold" ID="BSex_Narrative1">Birth Sex: <content ID="BSex_value">Female</content></paragraph>
             <list>
                 <caption>Smoking Status</caption>
                 <item>
@@ -16,8 +17,7 @@
                     <content>Recorded August 15, 2012 08:00am</content>
                 </item>
             </list>
-            <paragraph styleCode="Bold" ID="BSex_Narrative1">Birth Sex: <content ID="BSex_value">Female</content></paragraph>
-        </text>
+           </text>
         <entry><!-- New PROPOSED Birth Sex Entry - Will be proposed for new C-CDA R2.1 Companion Guide -->
             <observation classCode="OBS" moodCode="EVN">
             	<!-- New templateId for Birth Sex -->
