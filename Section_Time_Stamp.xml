@@ -43,7 +43,7 @@
             <value xsi:type="IVL_TS">
                 <low value="20120815"/>
                 <high value="2015815"/>
-            </value
+            </value>
         </observation>
     </entry>
     <entry typeCode="DRIV">
