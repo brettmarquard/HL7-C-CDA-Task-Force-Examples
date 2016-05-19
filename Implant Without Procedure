@@ -62,7 +62,9 @@
           <!-- Placed Date -->
           <low value="20160413"/>
         </effectiveTime>
-        <!-- Example with qualifier to explicitly convey laterality; see second example which does not use qualifier -->
+        <!-- Example with qualifier to explicitly convey laterality
+             See example #2 for an alternative which does not use qualifier 
+             See example #3 for an alternative which does not include any code at all, but still conveys the original site text -->
         <targetSiteCode code="361291001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Entire knee region">
           <qualifier>
             <name code="272741003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="laterality" />
