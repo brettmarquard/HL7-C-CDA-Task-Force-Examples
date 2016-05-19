@@ -61,10 +61,8 @@
         <effectiveTime>
           <!-- Placed Date -->
           <low value="20160413"/>
-          <!-- Expiration Date? -->
-          <high nullFlavor="NI"/>
         </effectiveTime>
-        <!-- Example with qualifier -->
+        <!-- Example with qualifier to explicitly convey laterality; see second example which does not use qualifier -->
         <targetSiteCode code="361291001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Entire knee region">
           <qualifier>
             <name code="272741003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="laterality" />
@@ -82,6 +80,8 @@
                 </originalText>
               </code>
             </playingDevice>
+            <!-- From Product Instance template:
+                 The scopingEntity/id should correspond to FDA or the appropriate issuing agency. -->
             <scopingEntity>
               <id root="2.16.840.1.113883.3.3719"/>
             </scopingEntity>
@@ -97,7 +97,6 @@
         <statusCode code="active"/>
         <effectiveTime>
           <low value="20160413"/>
-          <high nullFlavor="NI"/>
         </effectiveTime>
         <!-- Example without qualifier -->
         <targetSiteCode code="82169009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Structure of left knee"/>
@@ -112,6 +111,8 @@
                 </originalText>
               </code>
             </playingDevice>
+            <!-- From Product Instance template:
+                 The scopingEntity/id should correspond to FDA or the appropriate issuing agency. -->
             <scopingEntity>
               <id root="2.16.840.1.113883.3.3719"/>
             </scopingEntity>
@@ -127,7 +128,6 @@
         <statusCode code="active"/>
         <effectiveTime>
           <low value="20160413"/>
-          <high nullFlavor="NI"/>
         </effectiveTime>
         <!-- Example with no targetSiteCode at all -->
         <participant typeCode="DEV">
@@ -141,6 +141,8 @@
                 </originalText>
               </code>
             </playingDevice>
+            <!-- From Product Instance template:
+                 The scopingEntity/id should correspond to FDA or the appropriate issuing agency. -->
             <scopingEntity>
               <id root="2.16.840.1.113883.3.3719"/>
             </scopingEntity>
