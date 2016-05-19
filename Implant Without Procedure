@@ -41,7 +41,7 @@
           </tr>
           <tr>
             <td ID="implant3">Patella Component</td>
-            <td>Left: Knee</td>
+            <td ID="implant3site">Left: Knee</td>
             <td>MCK</td>
             <td>00848486000349</td>
             <td>Implanted: Qty: 1 on 04/13/2016 by Fleming, Barry</td>
@@ -129,7 +129,12 @@
         <effectiveTime>
           <low value="20160413"/>
         </effectiveTime>
-        <!-- Example with no targetSiteCode at all -->
+        <!-- Example where targetSiteCode is not mapped -->
+        <targetSiteCode nullFlavor="UNK">
+          <originalText>
+            <reference value="#implant3site" />
+          </originalText>
+        </targetSiteCode>
         <participant typeCode="DEV">
           <participantRole classCode="MANU">
             <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
