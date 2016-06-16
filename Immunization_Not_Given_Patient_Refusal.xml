@@ -34,7 +34,9 @@
                                     <reference value="#ImmunizationProduct_1"/>
                                 </originalText>
                             </code>
-                            <lotNumberText>1</lotNumberText>
+                            <!-- DSTU comment relaxing lotNumber requirement -->
+                            <!-- http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=995 -->
+                            <!-- <lotNumberText>1</lotNumberText> -->
                         </manufacturedMaterial>
                         <!-- Optional manufacturerOrganization
                     				<manufacturerOrganization>
