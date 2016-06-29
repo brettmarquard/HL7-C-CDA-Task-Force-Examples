@@ -1,0 +1,72 @@
+<component>
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
+        <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
+        <title>Implants</title>
+        <text>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Implanted</th>
+                        <th>Area</th>
+                        <th>Manufacturer</th>
+                        <th>Device Identifier</th>
+                        <th>Details</th>
+                        <th>Model</th>
+                        <th>Serial</th>
+                        <th>Lot</th>
+                        <td>Procedure</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td ID="implant1">Patellofemoral Component</td>
+                        <td>Left: Knee</td>
+                        <td>MCK</td>
+                        <td>00848486000400</td>
+                        <td>Implanted: Qty: 1 on 04/13/2016 by Fleming, Barry</td>
+                        <td/>
+                        <td>123777</td>
+                        <td>ABC634</td>
+                        <td ID="proc1">Replacement of left knee join</td>
+                    </tr>                 
+                </tbody>
+            </table>
+        </text>
+        <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+                <id extension="2744" root="1.2.840.114350.1.13.5552.1.7.2.737780"/>
+                <code code="2835095018" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Replacement of left knee joint">
+                    <originalText>
+                        <reference value="#proc1"/>
+                    </originalText>
+                </code>
+                <statusCode code="active"/>
+                <effectiveTime>
+                    <!-- Placed Date -->
+                    <low value="20160413"/>
+                </effectiveTime>
+                <participant typeCode="DEV">
+                    <participantRole classCode="MANU">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                        <id assigningAuthorityName="FDA" extension="(01)00848486000400(11)160330(10)ABC634(21)123777" root="2.16.840.1.113883.3.3719"/>
+                        <playingDevice>
+                            <code nullFlavor="UNK">
+                                <originalText>
+                                    <reference value="#implant1"/>
+                                </originalText>
+                            </code>
+                        </playingDevice>
+                        <!-- From Product Instance template:
+                 The scopingEntity/id should correspond to FDA or the appropriate issuing agency. -->
+                        <scopingEntity>
+                            <id root="2.16.840.1.113883.3.3719"/>
+                        </scopingEntity>
+                    </participantRole>
+                </participant>
+            </procedure>
+        </entry>
+    </section>
+</component>
