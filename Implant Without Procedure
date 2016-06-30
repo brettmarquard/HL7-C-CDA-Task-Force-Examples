@@ -3,6 +3,8 @@
     <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
     <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
     <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
+    <!-- This is the list of medical equipment provided to or implanted in a patient-->
+    <!-- In this example, all the devices are implants so the implementer chose a section.title=Implants-->
     <title>Implants</title>
     <text>
       <table>
@@ -159,3 +161,4 @@
     </entry>
   </section>
 </component>
+
