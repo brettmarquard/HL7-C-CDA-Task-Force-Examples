@@ -3,7 +3,9 @@
         <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
         <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
         <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
-        <title>Implants</title>
+        <!-- In this example, the implementer matched the section.code name to section.title -->
+        <!-- An implementer could use the section.title=implants or an appropriate title for their local implementation -->
+        <title>Medical Equipment</title>
         <text>
             <table>
                 <thead>
@@ -29,7 +31,7 @@
                         <td/>
                         <td>123777</td>
                         <td>ABC634</td>
-                        <td ID="proc1">Replacement of left knee join</td>
+                        <td ID="proc1">Replacement of left knee joint</td>
                     </tr>                 
                 </tbody>
             </table>
@@ -37,17 +39,15 @@
         <entry>
             <procedure classCode="PROC" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
-                <id extension="2744" root="1.2.840.114350.1.13.5552.1.7.2.737780"/>
-                <code code="2835095018" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Replacement of left knee joint">
+                <id extension="274544" root="1.2.840.114350.1.13.5552.1.7.2.737780"/>
+                <!-- This SNOMED code is a for a partial or total knee replacement. Other codes may be appropriate -->
+                <code code="443543000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Replacement of left knee joint">
                     <originalText>
                         <reference value="#proc1"/>
                     </originalText>
                 </code>
-                <statusCode code="active"/>
-                <effectiveTime>
-                    <!-- Placed Date -->
-                    <low value="20160413"/>
-                </effectiveTime>
+                <statusCode code="completed"/>
+                <effectiveTime value="20160413"/>
                 <participant typeCode="DEV">
                     <participantRole classCode="MANU">
                         <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
