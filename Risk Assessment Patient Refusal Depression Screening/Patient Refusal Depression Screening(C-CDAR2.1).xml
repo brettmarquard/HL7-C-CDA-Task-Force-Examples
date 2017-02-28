@@ -1,0 +1,45 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.56"/>
+    <!-- Mental Status Section -->
+    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="MENTAL STATUS"/>
+    <title>MENTAL STATUS</title>
+    <text>
+        <paragraph ID="Assessment">Patient Declined Adolescent Depression Screening on
+            4/01/2015</paragraph>
+    </text>
+    <entry>
+        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+            <!-- Assessment Scale Observation templateId from C-CDA-->
+            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+            <!-- Risk Category Assessment V2 from QRDA I -->
+            <templateId root="2.16.840.1.113883.10.20.24.3.69" extension="2016-02-01"/>
+            <id root="e2f6e099-70ad-4df8-b3ec-e66ee346146d"/>
+            <code code="73831-0" codeSystem="2.16.840.1.113883.6.1"
+                displayName="Adolescent depression screening assessment" codeSystemName="LOINC"/>
+            <text> </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+                <low value="20150401081500"/>
+                <high value="20150401081500"/>
+            </effectiveTime>
+            <value xsi:type="CD" nullFlavor="NA"/>
+            
+            <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                    <!-- Reason V2 from QRDA I -->
+                    <templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2014-12-01"/>
+                    <id root="73d04dfb-adc1-4089-a051-54f805b03595"/>
+                    <code code="77301-0" codeSystem="2.16.840.1.113883.6.1" displayName="reason"
+                        codeSystemName="LOINC"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150401081500"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"
+                        displayName="Refusal of treatment by patient" codeSystemName="SNOMED CT"/>
+                </observation>
+            </entryRelationship>
+        </observation>
+    </entry>
+</section>
