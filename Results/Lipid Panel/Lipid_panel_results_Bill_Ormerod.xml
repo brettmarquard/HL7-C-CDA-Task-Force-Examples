@@ -27,7 +27,7 @@
 									<td>196</td>
 									<td>mg/dL</td>
 									<td>Normal</td>
-									<td>Recommended: &lt;200; Moderate Risk: 200-239; High Risk: &gt;240</td>
+									<td ID="resultReferenceRange1">Recommended: &lt;200; Moderate Risk: 200-239; High Risk: &gt;240</td>
 								</tr>
 								<tr ID="result2">
 									<td>Triglyceride [Mass/volume] in Serum or Plasma</td>
@@ -82,7 +82,12 @@
 									<value xsi:type="PQ" value="196" unit="mg/dL"/>
 									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 									<referenceRange> 
+										<!-- Combining the 3 reference ranges in a single observationRange should only be done when received from lab in single string -->
+										<!-- Ideally, these ranges would be split into 3 separate ObservationRanges -->
 										<observationRange> 
+											<text>
+												<reference value="#resultReferenceRange1"/>
+											</text>
 											<value xsi:type="ST">"Recommended: &lt;200; Moderate Risk: 200-239; High Risk: &gt;240"</value>
 										 </observationRange>
 									</referenceRange>
