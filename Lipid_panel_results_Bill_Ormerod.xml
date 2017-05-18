@@ -1,0 +1,164 @@
+	<!-- ******************************************************** start added lipid panel reesults ******************************************************** -->
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+					<!-- Results Section with Coded Entries Required-->
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+						displayName="Relevant diagnostic tests and/or laboratory data"/>
+					<title>Completed Lab Results</title>
+					<text>
+						<table border="1">
+							<thead>
+								<tr>
+									<th colspan="5">Lipid Panel, 04/27/2017 9:30 am</th>
+								</tr>
+								<tr>
+									<th>Description</th>
+									<th>Value</th>
+									<th>Unit</th>
+									<th>Interpretation</th>
+									<th>Reference Range</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ID="result1">
+									<td>Cholesterol [Mass/volume] in Serum or Plasma</td>
+									<td>196</td>
+									<td>mg/dL</td>
+									<td>Normal</td>
+									<td>Recommended: &lt;200; Moderate Risk: 200-239; High Risk: &gt;240</td>
+								</tr>
+								<tr ID="result2">
+									<td>Triglyceride [Mass/volume] in Serum or Plasma</td>
+									<!-- Example value filed from HL7 interface, paired with a real unit -->
+									<td>100</td>
+									<td>mg/dL</td>
+									<td>Normal</td>
+									<td>40 to 160</td>
+								</tr>
+								<tr ID="result3">
+									<td>Cholesterol in HDL [Mass/volume] in Serum or Plasma</td>
+									<td>60</td>
+									<td>mg/dL</td>
+									<td>Normal</td>
+									<td>29 to 72</td>
+								</tr>
+								<tr ID="result4">
+									<td>Cholesterol in LDL [Mass/volume] in Serum or Plasma</td>
+									<td>116</td>
+									<td>mg/dL</td>
+									<td>Normal</td>
+									<td>Recommended: &lt;130; Moderate Risk: 130-159; High Risk: &gt;160</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<organizer classCode="BATTERY" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+							<id root="f16043d8-8d93-41a1-9682-a6cc7215572c"/>
+							<code code="24331-1" displayName="Lipid 1996 panel in Serum or Plasma" codeSystem="2.16.840.1.113883.6.1"
+								codeSystemName="LOINC"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="201704270930+0500"/>
+								<high value="201704270930+0500"/>
+							</effectiveTime>
+							<!-- This component just here to show a typical PQ result, as well as the basis for an atypical LDL result -->
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+									<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+									<code code="2093-3" displayName="Cholesterol [Mass/volume] in Serum or Plasma"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text>
+										<reference value="#result1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="201704270930+0500"/>
+									<value xsi:type="PQ" value="196" unit="mg/dL"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<referenceRange> 
+										<observationRange> 
+											<value xsi:type="ST">"Recommended: &lt;200; Moderate Risk: 200-239; High Risk: &gt;240"</value>
+										 </observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+									<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+									<code code="2571-8" displayName="Triglyceride [Mass/volume] in Serum Plasma"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text>
+										<reference value="#result2"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="201704270930+0500"/>
+									<value xsi:type="PQ" value="100" unit="mg/dL" />
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<referenceRange> 
+										<observationRange>
+											<value xsi:type="IVL_PQ">
+												<low value="40" unit="mg/dL"/>
+												<high value="160" unit="mg/dL" />
+											</value>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+									<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+									<code code="2085-9" displayName="Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text>
+										<reference value="#result3"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="201704270930+0500"/>
+									<value xsi:type="PQ" value="60" unit="mg/dL" />
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<referenceRange> 
+										<observationRange>
+											<value xsi:type="IVL_PQ">
+												<low value="29" unit="mg/dL"/>
+												<high value="72" unit="mg/dL" />
+											</value>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+									<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+									<code code="2089-1" displayName="Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text>
+										<reference value="#result4"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="201704270930+0500"/>
+									<value xsi:type="PQ" value="116" unit="mg/dL" />
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<referenceRange> 
+										<observationRange> 
+											<value xsi:type="ST">"Recommended: &lt;130; Moderate Risk: 131-159; High Risk: &gt;160"</value>
+										 </observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+	<!-- ******************************************************** end added lipid panel reesults ******************************************************** -->

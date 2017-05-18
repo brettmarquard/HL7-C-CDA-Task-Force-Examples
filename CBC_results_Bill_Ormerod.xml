@@ -1,0 +1,811 @@
+<!-- ******************************************************** Start added CBC panel reesults ******************************************************** -->
+<component>
+	<section>
+		<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+		<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+		<!-- Results Section with Coded Entries Required-->
+		<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+		<title>Completed Lab Results</title>
+		<text>
+			<table border="1">
+				<thead>
+					<tr>
+						<th colspan="5">CBC W Auto Differential panel - Blood, 04/20/2017 9:08 am</th>
+					</tr>
+					<tr>
+						<th>Description</th>
+						<th>Value</th>
+						<th>Unit</th>
+						<th>Interpretation</th>
+						<th>Reference Range</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ID="result1">
+						<td>Leukocytes [#/​volume] in Blood by Automated count</td>
+						<td>105600</td>
+						<td>{cells}/uL</td>
+						<td>Above upper panic limits</td>
+						<td>4300 to 10800</td>
+					</tr>
+					<tr ID="result2">
+						<td>Erythrocytes [#/​volume] in Blood by Automated count</td>
+						<td>4.41</td>
+						<td>10*6/uL</td>
+						<td>Normal</td>
+						<td>4.3 to 6.2</td>
+					</tr>
+					<tr ID="result3">
+						<td>Hemoglobin [Mass/​volume] in Blood</td>
+						<td>12.5</td>
+						<td>g/mL</td>
+						<td>Low</td>
+						<td>13 to 18</td>
+					</tr>
+					<tr ID="result4">
+						<td>Hematocrit [Volume Fraction] of Blood by Automated count</td>
+						<td>41</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>40 to 52</td>
+					</tr>
+					<tr ID="result5">
+						<td>Erythrocyte mean corpuscular volume [Entitic volume] by Automated count</td>
+						<td>91</td>
+						<td>fL</td>
+						<td>Normal</td>
+						<td>80 to 95</td>
+					</tr>
+					<tr ID="result6">
+						<td>Erythrocyte mean corpuscular hemoglobin [Entitic mass] by Automated count</td>
+						<td>29</td>
+						<td>pg/{cell}</td>
+						<td>Normal</td>
+						<td>27 to 31</td>
+					</tr>
+					<tr ID="result7">
+						<td>Erythrocyte mean corpuscular hemoglobin concentration [Mass/​volume] by Automated count</td>
+						<td>32.4</td>
+						<td>g/dL</td>
+						<td>Normal</td>
+						<td>32 to 36</td>
+					</tr>
+					<tr ID="result8">
+						<td>Erythrocyte distribution width [Ratio]</td>
+						<td>10.5</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>10.2 to 14.5</td>
+					</tr>
+					<tr ID="result9">
+						<td>Basophils [#/volume] in Blood</td>
+						<td>0.1</td>
+						<td>10*3/uL</td>
+						<td>Normal</td>
+						<td>0 to 0.3</td>
+					</tr>
+					<tr ID="result10">
+						<td>Basophils/100 leukocytes in Blood</td>
+						<td>0.1</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>0 to 2</td>
+					</tr>
+					<tr ID="result11">
+						<td>Monocytes [#/volume] in Blood</td>
+						<td>3</td>
+						<td>10*3/uL</td>
+						<td>Normal</td>
+						<td>0.0 to 13.0</td>
+					</tr>
+					<tr ID="result12">
+						<td>Monocytes/100 leukocytes in Blood</td>
+						<td>3</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>0 to 10</td>
+					</tr>
+					<tr ID="result13">
+						<td>Eosinophils [#/volume] in Blood</td>
+						<td>2.1</td>
+						<td>10*3/uL</td>
+						<td>Above upper panic limits</td>
+						<td>0.0 to 0.45</td>
+					</tr>
+					<tr ID="result14">
+						<td>Eosinophils/100 leukocytes in Blood</td>
+						<td>2</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>0 to 6</td>
+					</tr>
+					<tr ID="result15">
+						<td>Lymphocytes [#/volume] in Blood</td>
+						<td>42.1</td>
+						<td>10*3/uL</td>
+						<td>Above upper panic limits</td>
+						<td>1.0 to 4.8</td>
+					</tr>
+					<tr ID="result16">
+						<td>Lymphocytes/100 leukocytes in Blood</td>
+						<td>39</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>15.0 to 45.0</td>
+					</tr>
+					<tr ID="result17">
+						<td>Neutrophils [#/volume] in Blood</td>
+						<td>58</td>
+						<td>10*3/uL</td>
+						<td>Above upper panic limits</td>
+						<td>1.5 to 7.0</td>
+					</tr>
+					<tr ID="result18">
+						<td>Neutrophils/100 leukocytes in Blood</td>
+						<td>55</td>
+						<td>%</td>
+						<td>Normal</td>
+						<td>50 to 73</td>
+					</tr>
+					<tr ID="result19">
+						<td>Platelets [#/​volume] in Blood by Automated count</td>
+						<td>210000</td>
+						<td>{cells}/uL</td>
+						<td>Normal</td>
+						<td>150000 to 350000</td>
+					</tr>
+					<tr ID="result20">
+						<td>Anisocytosis [Presence]in Blood</td>
+						<td>Present ++ out of ++++</td>
+						<td/>
+						<td>Abnormal</td>
+						<td/>
+					</tr>
+					<tr ID="result21">
+						<td>Hypochromia [Presence]in Blood</td>
+						<td>not detected</td>
+						<td/>
+						<td>Normal</td>
+						<td/>
+					</tr>
+					<tr ID="result22">
+						<td>Macrocytes [Presence]in Blood</td>
+						<td>not detected</td>
+						<td/>
+						<td>Normal</td>
+						<td/>
+					</tr>
+					<tr ID="result23">
+						<td>Microcytes [Presence]in Blood</td>
+						<td>not detected</td>
+						<td/>
+						<td>Normal</td>
+						<td/>
+					</tr>
+					<tr ID="result24">
+						<td>Poikilocytosis [Presence] in Blood by Light microscopy</td>
+						<td>not detected</td>
+						<td/>
+						<td>Normal</td>
+						<td/>
+					</tr>
+					<tr ID="result25">
+						<td>Polychromasia [Presence] in Blood by Light microscopy</td>
+						<td>not detected</td>
+						<td/>
+						<td>Normal</td>
+						<td/>
+					</tr>
+					<tr ID="result26">
+						<td>Erythrocyte morphology finding [Identifier] in Blood</td>
+						<td>Many spherocytes present.</td>
+						<td/>
+						<td>Abnormal</td>
+						<td/>
+					</tr>
+					<tr ID="result27">
+						<td>Leukocyte morphology finding [Identifier] in Blood</td>
+						<td>Reactive morphology in lymphoid cells.</td>
+						<td/>
+						<td>Abnormal</td>
+						<td/>
+					</tr>
+					<tr ID="result28">
+						<td>Platelet morphology finding [Identifier] in Blood</td>
+						<td>Platelets show defective granulation.</td>
+						<td/>
+						<td>Abnormal</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+		</text>
+		<entry>
+			<organizer classCode="BATTERY" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+				<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+				<id root="f16043d8-8d93-41a1-9682-a6cc7215572c"/>
+				<code code="57021-8" displayName="CBC W Auto Differential panel in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+				<statusCode code="completed"/>
+				<effectiveTime>
+					<low value="201704200908+0500"/>
+					<high value="201704200908+0500"/>
+				</effectiveTime>
+				<!-- Author 0..* goes here -->
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26464-8" displayName="Leukocytes [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result1"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="105600" unit="{cells}/uL"/>
+						<interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="4300" unit="{cells}/uL"/>
+									<high value="10800" unit="{cells}/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26453-1" displayName="Erythrocytes [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result2"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="4.41" unit="10*6/uL"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="4.3" unit="10*6/uL"/>
+									<high value="6.2" unit="10*6/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="718-7" displayName="Hemoglobin [Mass/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result3"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="12.5" unit="g/mL"/>
+						<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="13" unit="g/mL"/>
+									<high value="18" unit="g/mL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="20570-8" displayName="Hematocrit [Volume Fraction] of Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result4"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="41" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="40" unit="%"/>
+									<high value="52" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="30428-7" displayName="Erythrocyte mean corpuscular volume [Entitic volume] by Automated count" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result5"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="91" unit="fL"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="80" unit="fL"/>
+									<high value="95" unit="fL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="28539-5" displayName="Erythrocyte mean corpuscular hemoglobin [Entitic mass] by Automated count" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result6"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="29" unit="pg/{cell}"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="27" unit="pg/{cell}"/>
+									<high value="31" unit="pg/{cell}"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="28540-3" displayName="Erythrocyte mean corpuscular hemoglobin concentration [Mass/volume] by Automated count" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result7"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="32.4" unit="g/dL"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="32" unit="g/dL"/>
+									<high value="36" unit="g/dL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="30385-9" displayName="Erythrocyte distribution width [Ratio]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result8"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="10.5" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="10.2" unit="%"/>
+									<high value="14.5" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26444-0" displayName="Basophils [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result9"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="0.1" unit="10*3/uL"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="0" unit="10*3/uL"/>
+									<high value="0.3" unit="10*3/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="30180-4" displayName="Basophils/100 leukocytes in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result10"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="0.1" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="0" unit="%"/>
+									<high value="2" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26484-6" displayName="Monocytes [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result11"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="3" unit="10*3/uL"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="0" unit="10*3/uL"/>
+									<high value="13.0" unit="10*3/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26485-3" displayName="Monocytes/100 leukocytes in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result12"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="3" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="0" unit="%"/>
+									<high value="10" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26484-6" displayName="Eosinophils [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result13"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="2.1" unit="10*3/uL"/>
+						<interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="0.0" unit="10*3/uL"/>
+									<high value="0.45" unit="10*3/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26450-7" displayName="Eosinophils/100 leukocytes in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result14"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="2" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="0" unit="%"/>
+									<high value="6" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26474-7" displayName="Lymphocytes [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result15"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="42.1" unit="10*3/uL"/>
+						<interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="1.0" unit="10*3/uL"/>
+									<high value="4.8" unit="10*3/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26478-8" displayName="Lymphocytes /100 leukocytes in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result16"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="39" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="15.0" unit="%"/>
+									<high value="45.0" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26499-4" displayName="Neutrophils [#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result17"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="58" unit="10*3/uL"/>
+						<interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="1.5" unit="10*3/uL"/>
+									<high value="7.0" unit="10*3/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26511-6" displayName="Neutrophils /100 leukocytes in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result18"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="55" unit="%"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="50" unit="%"/>
+									<high value="73" unit="%"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="26515-7" displayName="Platelets [#/volume] in Blood by Automated count" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result19"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="PQ" value="210000" unit="{cells}/uL"/>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						<referenceRange>
+							<observationRange>
+								<value xsi:type="IVL_PQ">
+									<low value="150000" unit="{cells}/uL"/>
+									<high value="350000" unit="{cells}/uL"/>
+								</value>
+							</observationRange>
+						</referenceRange>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="38892-6" displayName="Anisocytosis [Presence] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result20"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">Present ++ out of ++++ </value>
+						<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="30400-6" displayName="Hypochromia [Presence]in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result21"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">not detected</value>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="30400-6" displayName="Macrocytes [Presence]in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result22"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">not detected</value>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="30434-5" displayName="Microcytes [Presence]in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result23"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">not detected</value>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="779-9" displayName="Poikilocytosis [Presence] in Blood by Light microscopy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result24"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">not detected</value>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="10378-8" displayName="Polychromasia [Presence] in Blood by Light microscopy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result25"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">not detected</value>
+						<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="6742-1" displayName="Erythrocyte morphology finding [Identifier] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result26"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">Many spherocytes present.</value>
+						<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="11156-7" displayName="Leukocyte morphology finding [Identifier] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result27"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">Reactive morphology in lymphoid cells.</value>
+						<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+				<component>
+					<observation classCode="OBS" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+						<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+						<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+						<code code="11125-2" displayName="Platelet morphology finding [Identifier] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+						<text>
+							<reference value="#result28"/>
+						</text>
+						<statusCode code="completed"/>
+						<effectiveTime value="201704200908+0500"/>
+						<value xsi:type="ST">Platelets show defective granulation.</value>
+						<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+					</observation>
+				</component>
+			</organizer>
+		</entry>
+	</section>
+</component>
+<!-- ******************************************************** End added CBC panel reesults ******************************************************** -->
