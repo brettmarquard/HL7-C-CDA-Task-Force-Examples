@@ -90,7 +90,7 @@
 											Example referenced content, using Tobacco Use: Ex-heavy cigarette smoker 20 to 39 per day
 												(where the (code, codeSystem) on the value element would be (266924008, 2.16.840.1.113883.6.96))
 									-->
-								<reference value="#ResultOrganizerCValueReference1"/>
+								<reference value="#simpleObservationValueReference1"/>
 							</originalText>
 						</value>
 						<interpretationCode code="x" codeSystem="1.2.3.4.5.6.7.8.42" displayName="semper">
