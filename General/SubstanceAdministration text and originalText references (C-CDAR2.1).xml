@@ -30,7 +30,7 @@
 		<entry>
 			<substanceAdministration classCode="SBADM" moodCode="EVN">
 				<!-- ... -->
-				<!-- Could inlcude code element, although rarely used in substanceAdministration -->
+				<!-- Could include code element, although rarely used in substanceAdministration -->
 				<!-- the entire text of the substanceAdministration
 									Example, of a medication: 0.3 ML Enoxaparin Sodium 100 MG/ML Prefilled Syringe 100 MG injected DAILY AS DIRECTED. Site: Upper abdomen Quantity: 100 Refills: 5001 Administer one syringe daily for 7 days. Call for signs of bleeding. Ordered: 1-Jan-2013 Primari, Phillip Start: 14-Jul-2014 End: 14-Jul-2014 Reaction: Hives (Moderate), Abdominal pain (Severe), Vomiting (Severe) Indication: DVT Generic substitution allowed. Comment: Patient is having difficulty paying co-pays for this medication
 							-->
