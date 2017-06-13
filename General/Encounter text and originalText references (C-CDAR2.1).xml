@@ -23,11 +23,7 @@
 							<br/>
 							mightbeSomePhoneNumber
 						</td>
-						<td>
-							labeltext: 	<content ID="encounterDischargeDispositionCodeRef1">Pellentesque pellentesque ipsum id tincidunt venenatis.</content>
-							<br/>
-							<!-- ... -->
-						</td>
+						<td>labelText: mmm DD YYYY</td>
 					</tr>
 				</tbody>
 			</table>
@@ -51,14 +47,7 @@
 					<reference value="#encounterFullTextReference1"/>
 				</text>
 				<!-- ... -->
-				<!-- if there is a discharge disposition for the encounter, and there is human readable content reflecting the code, then the originalText/reference SHOULD be present 
-								yes, some extensions have originalText/refence children
-							-->
-				<sdtc:dischargeDispositionCode code="xx" codeSystem="1.2.3.4.5.6.7.8.42">
-					<originalText>
-						<reference value="#encounterDischargeDispositionCodeRef1"/>
-					</originalText>
-				</sdtc:dischargeDispositionCode>
+				<effectiveTime value="YYYMMDD"/>
 			</encounter>
 		</entry>
 	</section>

@@ -41,7 +41,7 @@
 								-->
 					<reference value="#simpleObservationFullTextReference1"/>
 				</text>
-				<effectiveTime/>
+				<effectiveTime value="YYYMMDD"/>
 				<!-- ... -->
 				<value xsi:type="CD" code="3456" codeSystem="1.2.3.4.5.6.7.8.42" displayName="duis id consequat">
 					<!--If some of the human readable text is a representation of the value, we SHOULD include a reference to that text using the originalText/reference construct 

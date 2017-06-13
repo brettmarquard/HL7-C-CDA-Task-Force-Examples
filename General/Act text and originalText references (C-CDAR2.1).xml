@@ -33,8 +33,8 @@
 							-->
 				<text>
 					<!-- notice that the ID containing the referenced value is on an element that includes all text of the act.
-										in this case, the element is a paragraph, but might be a table, tbody, tr, etc....elements that typically wrap more entire concepts, not just pieces of content
-										Example referenced content, using Comment Activity: Patient is having difficulty paying co-pays for these medications.
+					     in this case, the element is a paragraph, but might be a table, tbody, tr, etc....elements that typically wrap more entire concepts, not just pieces of content
+					     Example referenced content, using Comment Activity: Patient is having difficulty paying co-pays for these medications.
 								-->
 					<reference value="#simpleActFullTextReference1"/>
 				</text>
