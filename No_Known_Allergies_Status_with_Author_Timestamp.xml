@@ -10,7 +10,7 @@
             <low value="20091201"/> <!--show time when the concern first began being tracked-->
         </effectiveTime>
         <entryRelationship typeCode="SUBJ">
-            <!-- No Known Allergies -->
+            <!-- ** Veronica Test **No Known Allergies -->
             <!-- The negationInd = true negates the observation/value -->
             <!-- The use of negationInd corresponds with the newer Observation.valueNegationInd -->
             <observation classCode="OBS" moodCode="EVN" negationInd="true">
