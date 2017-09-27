@@ -1,0 +1,312 @@
+<component>
+	<section>
+	  <templateId root="2.16.840.1.113883.10.20.22.2.22" assigningAuthorityName="CCDA Encounters Section" extension="2015-08-01" />
+	  <templateId root="2.16.840.1.113883.10.20.22.2.22" assigningAuthorityName="CCDA Encounters Section" />
+	  <id root="6c628dae-578b-4e3a-b0d9-e82453d29c14" />
+	  <code code="46240-8" displayName="History of encounters" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+	  <title>Encounters</title>
+	  <text>
+		<table width="100%">
+		  <thead>
+			<tr>
+			  <th>Encounter</th>
+			  <th>Provider</th>
+			  <th>Location</th>
+			  <th>Date</th>
+			  <th>Diagnosis</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td ID="encounterDescriptionID0">[Patient Encounter]</td>
+			  <td>David E Ford MD</td>
+			  <td>
+			  </td>
+			  <td>09/18/2017</td>
+			  <td ID="encounterDiagnosisID0">Jaw Asymmetry Maxillary, Anomaly of Dental Arch, Malocclusion Mesio-occlusion</td>
+			</tr>
+		  </tbody>
+		</table>
+	  </text>
+	  <entry typeCode="DRIV">
+		<encounter classCode="ENC" moodCode="EVN">
+		  <templateId root="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="CCDA Encounter Activity" extension="2015-08-01" />
+		  <templateId root="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="CCDA Encounter Activity" />
+		  <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.16" extension="449" assigningAuthorityName="Intergy Encounter ID" />
+		  <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.16.1" extension="271818" assigningAuthorityName="Intergy Encounter Number" />
+		  <code code="AMB" displayName="ambulatory" codeSystem="2.16.840.1.113883.1.11.13955" codeSystemName="ActEncounterCode" >
+			<originalText>
+			  <reference value="#encounterDescriptionID0" />
+			</originalText>
+		  </code>
+		  <text>
+			<reference value="#encounterDescriptionID0" />
+		  </text>
+		  <effectiveTime>
+			<low value="20170918093900-0400" />
+			<high value="20170918093900-0400" />
+		  </effectiveTime>
+		  <performer typeCode="PRF">
+			<assignedEntity classCode="ASSIGNED">
+			  <id root="2.16.840.1.113883.4.6" extension="9990058700" assigningAuthorityName="NPI" />
+			  <id root="2.16.840.1.113883.3.140.1.1918489287.6.3" extension="36" assigningAuthorityName="Practice Provider ID" />
+			  <addr>
+				<streetAddressLine>87 Bayshore Drive</streetAddressLine>
+				<city>Madison</city>
+				<state>CA</state>
+				<country>US</country>
+				<postalCode>95653</postalCode>
+			  </addr>
+			  <telecom value="tel:+1-916-555-7657" use="WP" />
+			  <assignedPerson>
+				<name>
+				  <given>David</given>
+				  <given>E</given>
+				  <family>Ford</family>
+				  <suffix>MD</suffix>
+				</name>
+			  </assignedPerson>
+			  <representedOrganization>
+				<id root="2.16.840.1.113883.3.140.1.1918489287.6" extension="MMC" />
+				<name>Madison Medical Center P. A.</name>
+				<telecom value="tel:+1-916-555-7654" use="WP" />
+				<telecom value="tel:+1-916-555-7657" use="WP" />
+				<addr>
+				  <streetAddressLine>34 Sycamore Street</streetAddressLine>
+				  <streetAddressLine>Suite 3</streetAddressLine>
+				  <city>Madison</city>
+				  <state>CA</state>
+				  <country>US</country>
+				  <postalCode>95653</postalCode>
+				</addr>
+			  </representedOrganization>
+			</assignedEntity>
+		  </performer>
+		  <informant>
+			<assignedEntity>
+			  <id root="f8200198-9c60-4e33-9ceb-5f110e3b6571" />
+			  <addr>
+				<streetAddressLine>34 Sycamore Street</streetAddressLine>
+				<streetAddressLine>Suite 3</streetAddressLine>
+				<city>Madison</city>
+				<state>CA</state>
+				<country>US</country>
+				<postalCode>95653</postalCode>
+			  </addr>
+			  <telecom value="tel:+1-916-555-7654" use="WP" />
+			  <assignedPerson>
+				<name nullFlavor="UNK" />
+			  </assignedPerson>
+			  <representedOrganization>
+				<id root="2.16.840.1.113883.3.140.1.1918489287.6" extension="MMC" />
+				<name>Madison Medical Center P. A.</name>
+				<telecom value="tel:+1-916-555-7654" use="WP" />
+				<telecom value="tel:+1-916-555-7657" use="WP" />
+				<addr>
+				  <streetAddressLine>34 Sycamore Street</streetAddressLine>
+				  <streetAddressLine>Suite 3</streetAddressLine>
+				  <city>Madison</city>
+				  <state>CA</state>
+				  <country>US</country>
+				  <postalCode>95653</postalCode>
+				</addr>
+			  </representedOrganization>
+			</assignedEntity>
+		  </informant>
+		  <entryRelationship typeCode="COMP">
+			<act classCode="ACT" moodCode="EVN">
+			  <templateId root="2.16.840.1.113883.10.20.22.4.80" assigningAuthorityName="CCDA Encounter Diagnosis" extension="2015-08-01" />
+			  <templateId root="2.16.840.1.113883.10.20.22.4.80" assigningAuthorityName="CCDA Encounter Diagnosis" />
+			  <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.7" extension="449" />
+			  <code code="29308-4" displayName="ENCOUNTER DIAGNOSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+			  <entryRelationship typeCode="SUBJ" inversionInd="false">
+				<observation classCode="OBS" moodCode="EVN" negationInd="false">
+				  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+				  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+				  <id root="755efd22-a0d1-4504-9e6f-de4e173f91bc" />
+				  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+					<translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+				  </code>
+				  <text>
+					<reference value="#encounterDiagnosisID0" />
+				  </text>
+				  <statusCode code="completed" />
+				  <effectiveTime>
+					<low nullFlavor="UNK" />
+					<high nullFlavor="UNK" />
+				  </effectiveTime>
+				  <value code="235083001" displayName="Asymmetry of maxilla (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+					<originalText>
+					  <reference value="#encounterDiagnosisID0" />
+					</originalText>
+					<translation code="524.11" displayName="Jaw Asymmetry Maxillary" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
+					<translation code="M26.11" displayName="Jaw Asymmetry Maxillary" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+					<translation code="95980" displayName="Jaw Asymmetry Maxillary" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+				  </value>
+				  <informant>
+					<assignedEntity>
+					  <id root="3e736a10-47b4-4fe2-8f9f-bd5aafe47f48" />
+					  <addr>
+						<streetAddressLine>34 Sycamore Street</streetAddressLine>
+						<streetAddressLine>Suite 3</streetAddressLine>
+						<city>Madison</city>
+						<state>CA</state>
+						<country>US</country>
+						<postalCode>95653</postalCode>
+					  </addr>
+					  <telecom value="tel:+1-916-555-7654" use="WP" />
+					  <assignedPerson>
+						<name nullFlavor="UNK" />
+					  </assignedPerson>
+					  <representedOrganization>
+						<id root="2.16.840.1.113883.3.140.1.1918489287.6" extension="MMC" />
+						<name>Madison Medical Center P. A.</name>
+						<telecom value="tel:+1-916-555-7654" use="WP" />
+						<telecom value="tel:+1-916-555-7657" use="WP" />
+						<addr>
+						  <streetAddressLine>34 Sycamore Street</streetAddressLine>
+						  <streetAddressLine>Suite 3</streetAddressLine>
+						  <city>Madison</city>
+						  <state>CA</state>
+						  <country>US</country>
+						  <postalCode>95653</postalCode>
+						</addr>
+					  </representedOrganization>
+					</assignedEntity>
+				  </informant>
+				</observation>
+			  </entryRelationship>
+			  <entryRelationship typeCode="SUBJ" inversionInd="false">
+				<observation classCode="OBS" moodCode="EVN" negationInd="false">
+				  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+				  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+				  <id root="c351f35e-ad79-4519-aae2-153526171926" />
+				  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+					<translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+				  </code>
+				  <text>
+					<reference value="#encounterDiagnosisID0" />
+				  </text>
+				  <statusCode code="completed" />
+				  <effectiveTime>
+					<low nullFlavor="UNK" />
+					<high nullFlavor="UNK" />
+				  </effectiveTime>
+				  <value code="23997001" displayName="Anomaly of dental arch (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+					<originalText>
+					  <reference value="#encounterDiagnosisID0" />
+					</originalText>
+					<translation code="524.20" displayName="Anomaly of Dental Arch" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
+					<translation code="312141" displayName="Anomaly of Dental Arch" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+				  </value>
+				  <informant>
+					<assignedEntity>
+					  <id root="03cabc26-dad4-4b53-8de6-6ae8075c524a" />
+					  <addr>
+						<streetAddressLine>34 Sycamore Street</streetAddressLine>
+						<streetAddressLine>Suite 3</streetAddressLine>
+						<city>Madison</city>
+						<state>CA</state>
+						<country>US</country>
+						<postalCode>95653</postalCode>
+					  </addr>
+					  <telecom value="tel:+1-916-555-7654" use="WP" />
+					  <assignedPerson>
+						<name nullFlavor="UNK" />
+					  </assignedPerson>
+					  <representedOrganization>
+						<id root="2.16.840.1.113883.3.140.1.1918489287.6" extension="MMC" />
+						<name>Madison Medical Center P. A.</name>
+						<telecom value="tel:+1-916-555-7654" use="WP" />
+						<telecom value="tel:+1-916-555-7657" use="WP" />
+						<addr>
+						  <streetAddressLine>34 Sycamore Street</streetAddressLine>
+						  <streetAddressLine>Suite 3</streetAddressLine>
+						  <city>Madison</city>
+						  <state>CA</state>
+						  <country>US</country>
+						  <postalCode>95653</postalCode>
+						</addr>
+					  </representedOrganization>
+					</assignedEntity>
+				  </informant>
+				</observation>
+			  </entryRelationship>
+			  <entryRelationship typeCode="SUBJ" inversionInd="false">
+				<observation classCode="OBS" moodCode="EVN" negationInd="false">
+				  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+				  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+				  <id root="1dd3d744-6108-4284-823a-138c2568e446" />
+				  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+					<translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+				  </code>
+				  <text>
+					<reference value="#encounterDiagnosisID0" />
+				  </text>
+				  <statusCode code="completed" />
+				  <effectiveTime>
+					<low nullFlavor="UNK" />
+					<high nullFlavor="UNK" />
+				  </effectiveTime>
+				  <value code="12264001" displayName="Mesio-occlusion of teeth (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+					<originalText>
+					  <reference value="#encounterDiagnosisID0" />
+					</originalText>
+					<translation code="524.23" displayName="Malocclusion Mesio-occlusion" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
+					<translation code="M26.213" displayName="Malocclusion Mesio-occlusion" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+					<translation code="219237" displayName="Malocclusion Mesio-occlusion" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+				  </value>
+				  <informant>
+					<assignedEntity>
+					  <id root="6982887d-8c2e-401d-b8fc-13ac26d47e86" />
+					  <addr>
+						<streetAddressLine>34 Sycamore Street</streetAddressLine>
+						<streetAddressLine>Suite 3</streetAddressLine>
+						<city>Madison</city>
+						<state>CA</state>
+						<country>US</country>
+						<postalCode>95653</postalCode>
+					  </addr>
+					  <telecom value="tel:+1-916-555-7654" use="WP" />
+					  <assignedPerson>
+						<name nullFlavor="UNK" />
+					  </assignedPerson>
+					  <representedOrganization>
+						<id root="2.16.840.1.113883.3.140.1.1918489287.6" extension="MMC" />
+						<name>Madison Medical Center P. A.</name>
+						<telecom value="tel:+1-916-555-7654" use="WP" />
+						<telecom value="tel:+1-916-555-7657" use="WP" />
+						<addr>
+						  <streetAddressLine>34 Sycamore Street</streetAddressLine>
+						  <streetAddressLine>Suite 3</streetAddressLine>
+						  <city>Madison</city>
+						  <state>CA</state>
+						  <country>US</country>
+						  <postalCode>95653</postalCode>
+						</addr>
+					  </representedOrganization>
+					</assignedEntity>
+				  </informant>
+				</observation>
+			  </entryRelationship>
+			</act>
+		  </entryRelationship>
+		  <entryRelationship typeCode="REFR" inversionInd="false">
+			<act classCode="ACT" moodCode="EVN">
+				<code code="99408" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Alcohol and/or substance abuse structured screening and brief intervention services" />
+			</act>
+		  </entryRelationship>
+		  <entryRelationship typeCode="REFR" inversionInd="false">
+			<act classCode="ACT" moodCode="EVN">
+			  <code code="99394" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Well Office Visit Established Patient Ages 12-17"/>
+			</act>
+		  </entryRelationship>
+		  <entryRelationship typeCode="REFR" inversionInd="false">
+			<act classCode="ACT" moodCode="EVN">
+			  <code code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Office Visit, Established Patient Level 3"/>
+			</act>
+		  </entryRelationship>
+		</encounter>
+	  </entry>
+	</section>
+</component>
