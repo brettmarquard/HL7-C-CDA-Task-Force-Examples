@@ -1,5 +1,5 @@
 # HL7-C-CDA-Task-Force-Examples
-# These are some example C-CDAs created by Brett Marquard of River Rock Associates.
+# These are some example C-CDAs created by Brett Marquard of WaveOne Associates.
 
 ## Not all samples have been approved by HL7 Example Task Force, so check out the http://wiki.hl7.org/index.php?title=CDA_Example_Task_Force for current status. 
 
