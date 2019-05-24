@@ -1,0 +1,394 @@
+<!-- File courtesy of Emma Jones of Allscripts -->
+<component>
+	<structuredBody>
+		<component>
+				<section>
+					<!--NEW Care Teams Section Template ID and extension-->
+					<templateId root="2.16.840.1.113883.10.20.22.2.500" extension="2019-08-01"/>
+					<code code="86744-0" codeSystem="2.16.840.1.113883.6.1"/>
+					<title>Care Teams</title>
+					<text>
+						<table>
+							<tbody>
+								<tr>
+									<td>Inpatient Diabetes Care Team<br/>
+                                           <content ID="_4eab0e52-dd7d-4285-99eb-72d32ddb195c">Uncontrolled Diabetes</content>
+									</td>
+									<td>Active<br/>
+									       October 19, 2018
+									</td>
+									<td>Good Day Hospital<br/>
+											763 Horseshoe Rd<br/>
+                                            Gotham, OR 98764<br/>
+                                            +1(814)788-8000
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3"><content ID="_322877c7-14e1-4ef6-beee-040c945c5f44">This hospital is the patient preferred hospital for diabetes care</content></td>
+								</tr>
+								<tr>
+									<td>CareTeam Members</td>
+									<td>Dr. Henry Seven (Active)<br/>
+									       Primary Care Provider<br/>
+									       Internist<br/>
+									       <content ID="_4d2eaeef-7eb4-468f-ba96-35e3ab7f4aee">Performs annual patient visits</content><br/>
+									       October 18, 2019
+									 </td>
+									<td>Good Day clinic<br/>
+									       1000 New Bern Ave<br/>
+									        Raleigh, NC 27610<br/>
+									        +1-(919)555-8000
+									</td>
+								</tr>
+								<tr>
+									 <td></td>
+									 <td colspan="2"><content ID="_a7c75a30-ddb6-4da6-83c7-fb58aa3731ee">Dr Seven wants to increase patient visits to every three months</content></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Mary Smith (Inactive)<br/>
+									       Caregiver<br/>
+									       Aunt<br/>
+									       October 2018 - December 22, 2018 
+									 </td>
+									<td>
+									    +1-(919)555-8000
+									</td>
+								</tr>
+								<tr>
+									 <td></td>
+									 <td colspan="2"><content ID="_322877c7-14e1-4ef6-beee-040c945c5f449985666312">Ms. Smith assist with ADLs. Ms. Smith moved away and no longer cares for the patient. Ms. Smith preferred to be called via her cell phone number (919) 121-4567</content></td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<!--Care Team Organizer-->
+					<entry>
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<!--NEW Care Team Organizer Entry Template ID and extension-->
+							<templateId root="2.16.840.1.113883.10.20.22.4.500" extension="2019-08-01"/>
+							<id root="1.1.1.1.1.1"/>
+							<code code="86744-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team"/>
+							<!--Care Team Status - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion-->
+							<statusCode code="active"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="201810181426-0500"/>
+							</effectiveTime>
+							<!--author creating/updating the care team information-->
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20190104"/>
+								<assignedAuthor>
+									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+									<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine"/>
+									<telecom use="WP" value="tel:555-555-1002"/>
+									<assignedPerson>
+										<name>
+											<given>Henry</given>
+											<family>Seven</family>
+										</name>
+									</assignedPerson>
+								</assignedAuthor>
+							</author>
+							<!-- This participant is the Care Team Lead (1..1)-->
+							<!-- Care Team Lead is also in the first care team member act in the list of care team member acts-->
+							<participant typeCode="PPRF">
+								<!--<This id matches at least one of the member's id in the Care Team Member act template>-->
+								<participantRole>
+									<id root="1.5.5.5.5.5.5"/>
+								</participantRole>
+							</participant>
+							<!-- This participant is the Care Team's Organization (0..1)-->
+							<participant typeCode="LOC">
+								<participantRole>
+									<id root="1.3.3.3.3.3"/>
+									<addr use="WP">
+										<streetAddressLine>763 Horseshoe Rd</streetAddressLine>
+										<city>Raleigh</city>
+										<state>NC</state>
+										<postalCode>27610</postalCode>
+									</addr>
+									<telecom use="WP" value="tel:+1(814)788-8000"/>
+									<playingEntity classCode="PLC">
+										<name>Good Day Hospital</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<!--Care Team Organizer Components-->
+							<!-- Care Team Encounter Act [0..1] - This is the encounter that caused the existance of the Care Team-->
+							<component>
+								<encounter classCode="ENC" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+									<id root="1.4.4.4.4.4.4"/>
+									<code code="99223" displayName="Under New or Established Patient Initial Hospital Inpatient Care ServicescodeSystem" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201810081426-0500"/>
+										<high value="201810181826-0500"/>
+									</effectiveTime>
+									<participant typeCode="LOC">
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+											<code code="1061-1" displayName="Inpatient medical/surgical ward" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation">
+											</code>
+											<addr>
+												<streetAddressLine>763 Horseshoe Rd</streetAddressLine>
+												<city>Raleigh</city>
+												<state>NC</state>
+												<postalCode>27610</postalCode>
+											</addr>
+											<telecom value="tel:+1-(814)788-8000"/>
+											<playingEntity classCode="PLC">
+												<name>Good Day Hospital</name>
+											</playingEntity>
+										</participantRole>
+									</participant>
+								</encounter>
+							</component>
+							<!-- Care Team Members Acts (1..*). The first member component is the Care Team lead -->
+							<!-- #1 Care Team Member Act - This component is a care team member who is a provider -->
+							<component>
+								<act classCode="PCPR" moodCode="EVN">
+									<templateId root="1.2.3.4.5.6.2"/>
+									<id root="1.5.5.5.5.5.5"/>
+									<code code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team Information"/>
+									<!--Care Team Member Status - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion-->
+									<statusCode code="active"/>
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201810081426-0500"/>
+									</effectiveTime>
+									<!--Attributes about the provider member - specialty, name, address, telecom-->
+									<participant typeCode="PRF">
+										<!-- This is the provider "specialty" code - NUCC-->
+										<participantRole>
+											<code code="207R00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Internal Medicine"/>
+											<addr>
+												<streetAddressLine>1188 New Bern Ave</streetAddressLine>
+												<city>Raleigh</city>
+												<state>NC</state>
+												<postalCode>27610</postalCode>
+											</addr>
+											<telecom value="tel:+1-(919)555-8000"/>
+											<playingEntity>
+												<name>
+													<family>Seven</family>
+													<given>Henry</given>
+												</name>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<!-- care team member function on the care team. Uses this value set - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.27/expansion-->
+									<participant typeCode="IND">
+										<sdtc:functionCode code="453231000124104" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Primary care provider"/>
+										<participantRole nullFlavor="NI"/>
+									</participant>
+									<!-- this is the organization this care team member belongs to-->
+									<participant typeCode="LOC">
+										<participantRole>
+											<addr>
+												<streetAddressLine>1188 New Bern Ave</streetAddressLine>
+												<city>Raleigh</city>
+												<state>NC</state>
+												<postalCode>27610</postalCode>
+											</addr>
+											<telecom value="tel:+1-(919)555-8000"/>
+											<playingEntity>
+												<name>Good Day Clinic</name>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<!--Care Team Schedule Observation [0..1] - this is the schedule of when the member participates on the care team-->
+									<entryRelationship typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="INT">
+											<templateId root="1.2.3.4.5.6" extension="TBD"/>
+											<id root="1.7.8.9.1.0"/>
+											<code code="57203-2" displayName="Episode Timing" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<text>
+												<reference value="#_4d2eaeef-7eb4-468f-ba96-35e3ab7f4aee"/>
+											</text>
+											<statusCode code="completed"/>
+											<value xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+												<period value="12" unit="mo"/>
+											</value>
+										</observation>
+									</entryRelationship>
+									<!--Care Team Member Information - Note Activity that fully describes information about the care team member-->
+									<entryRelationship typeCode="COMP">
+										<act classCode="ACT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+											<code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+												<translation code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Care team information"/>
+											</code>
+											<text>
+												<reference value="#_a7c75a30-ddb6-4da6-83c7-fb58aa3731ee"/>
+											</text>
+											<statusCode code="completed"/>
+											<effectiveTime value="201812201440-0500"/>
+											<!--Author Participation - author who added this note on the care team member-->
+											<author>
+												<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+												<!-- Time note about the care team member was actually written -->
+												<time value="20181220083255-0500"/>
+												<assignedAuthor>
+													<id root="1.5.5.5.5.5.5"/>
+													<assignedPerson>
+														<name>
+															<given>Henry</given>
+															<family>Seven</family>
+														</name>
+													</assignedPerson>
+												</assignedAuthor>
+											</author>
+										</act>
+									</entryRelationship>
+								</act>
+							</component>
+							<!-- #2 Care Team Member Act - This component is a care team member who is a family member -->
+							<component>
+								<act classCode="PCPR" moodCode="EVN">
+									<templateId root="1.2.3.4.5.6.2"/>
+									<!--this id is the care team member ID and also matches the care team lead ID-->
+									<id root="2.2.2.2.2.2"/>
+									<code code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team Information"/>
+									<!--Care Team Member Status - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion-->
+									<!--this care team member is on the team but is inactive-->
+									<statusCode code="inactive"/>
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201806201426-0500"/>
+										<high value="201812221426-0500"/>
+									</effectiveTime>
+									<!--Attributes about care team member - family relationship, name, address telecom-->
+									<participant typeCode="PRF">
+										<participantRole>
+											<!--uses this value set - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion-->
+											<code code="AUNT" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Aunt"/>
+											<addr>
+												<streetAddressLine>100 Main St</streetAddressLine>
+												<city>Portland</city>
+												<state>OR</state>
+												<postalCode>97005</postalCode>
+											</addr>
+											<telecom value="tel:+1-(919)356-5555"/>
+											<playingEntity>
+												<name>
+													<family>Smith</family>
+													<given>Mary</given>
+												</name>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<!-- care team member function on the care team. Uses this value set - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.27/expansion-->
+									<participant typeCode="IND">
+										<sdtc:functionCode code="133932002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="caregiver"/>
+										<participantRole nullFlavor="NI"/>
+									</participant>
+									<!--Care Team Member Information - Note Activity that fully describes information about the care team member-->
+									<entryRelationship typeCode="COMP">
+										<act classCode="ACT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+											<code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+												<translation code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Care team information"/>
+											</code>
+											<text>
+												<reference value="#_322877c7-14e1-4ef6-beee-040c945c5f449985666312"/>
+											</text>
+											<statusCode code="completed"/>
+											<effectiveTime value="201812241440-0500"/>
+											<!--Author Participation - author who added this note on the care team member-->
+											<author>
+												<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+												<!-- Time note about the care team member was actually written -->
+												<time value="20181204083255-0500"/>
+												<assignedAuthor>
+													<id root="1.5.5.5.5.5.5"/>
+													<assignedPerson>
+														<name>
+															<given>Henry</given>
+															<family>Seven</family>
+														</name>
+													</assignedPerson>
+												</assignedAuthor>
+											</author>
+										</act>
+									</entryRelationship>
+								</act>
+							</component>
+							<!--Care Team Information Act (0..1) - Note Activity that fully describes information about the care team-->
+							<component>
+								<act classCode="ACT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+									<code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+										<translation code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Care team information"/>
+									</code>
+									<text>
+										<reference value="#_322877c7-14e1-4ef6-beee-040c945c5f44"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="201810221426-0500"/>
+									<!--Author Participation-->
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+										<!-- Time note about the care team was actually written -->
+										<time value="201810221426-0500"/>
+										<!--Author Participation - author who added this note on the care team-->
+										<assignedAuthor>
+											<id root="1.5.5.5.5.5.5"/>
+												<assignedPerson>
+													<name>
+														<given>Henry</given>
+														<family>Seven</family>
+													</name>
+												</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</act>
+							</component>
+							<!--Care Team Type Observations (0..*)-->
+							<!--Care Team Type #1 Encounter-focused-->
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="1.4.5.6.9" extension="TBD"/>
+									<id root="1.5.8.9.4"/>
+									<code code="86744-0" displayName="Care Team" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+									</code>
+									<statusCode code="completed"/>
+									<effectiveTime value="201810221426-0500"/>
+									<!-- Value selected from Care Team Category ValueSet-->
+									<value xsi:type="CD" code="27976-2" displayName="Encounter-focused care team" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Ambulatory care team</originalText>
+									</value>
+								</observation>
+							</component>
+							<!--Care Team Type #2 Condition-focused-->
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="1.4.5.6.9" extension="TBD"/>
+									<id root="1.8.7.6.3"/>
+									<code code="86744-0" displayName="Care Team" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+									</code>
+									<statusCode code="completed"/>
+									<effectiveTime value="201810221426-0500"/>
+									<!-- Value selected from Care Team Category ValueSet-->
+									<value xsi:type="CD" code="27978-8" displayName="Condition-focused care team" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Diabetes care team</originalText>
+									</value>
+								</observation>
+							</component>
+							<!--Care Team Reason Act (0..*) - reference health concern act, risk concern act, reference any-->
+							<component>
+								<!-- This act references a Health Concern, Risk Concern or some other entry present in the document the the Care Team act is related to"-->
+								<act classCode="ACT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.122"/>
+									<!-- This id points to an already defined Health Concern in the Health Concerns Section. Text from the referenced health concern is placed in the text of this section -->
+									<id root="4eab0e52-dd7d-4285-99eb-72d32ddb195c"/>
+									<!-- The code is nulled to "NP" Not Present" -->
+									<code nullFlavor="NP"/>
+									<statusCode code="completed"/>
+								</act>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+		</component>
+	</structuredBody>
+</component>
